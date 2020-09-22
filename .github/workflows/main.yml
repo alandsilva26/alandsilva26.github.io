@@ -18,15 +18,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@master
-        with:
-          find: "dummy text"
-          replace: "http://alandsilva26.github.io/chat-app-react"
-          include: "package.json"
+      # - name: Find and Replace
+      #   uses: jacobtomlinson/gha-find-replace@master
+      #   with:
+      #     find: "dummy text"
+      #     replace: "http://alandsilva26.github.io/chat-app-react"
+      #     include: "package.json"
 
-      - name: Display files
-        run: cat ./package.json
+      # - name: Display files
+      #   run: cat ./package.json
 
       - name: Install dependencies
         run: npm install

@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Deploy to GitHub Pages](https://github.com/alandsilva26/alandsilva26.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
 ## Available Scripts
 
