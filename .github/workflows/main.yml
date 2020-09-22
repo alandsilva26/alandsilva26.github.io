@@ -34,6 +34,7 @@ jobs:
       - name: Build
         run: CI=false npm run build
 
+
         # env:
         #   REACT_APP_AUTH_TOKEN: ${{ secrets.REACT_APP_AUTH_TOKEN }}
         #   REACT_APP_AUTH_DOMAIN: ${{ secrets.REACT_APP_AUTH_DOMAIN }}
@@ -45,3 +46,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
