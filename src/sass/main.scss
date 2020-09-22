@@ -1,0 +1,21 @@
+// imports
+
+@import "~bootstrap/scss/bootstrap";
+
+//base
+@import "base/reset";
+
+//abstracts
+@import "abstracts/variables";
+
+//layout
+@import "layout/navbar";
+
+//vendors
+@import "vendors/bootstrap";
+
+//pages
+@import "pages/home";
+
+//components
+@import "components/project-item";
