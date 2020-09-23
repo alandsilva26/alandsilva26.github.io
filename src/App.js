@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// require("dotenv").config();
 
 //common
 import Navbar from "./components/Navbar/navbar";
