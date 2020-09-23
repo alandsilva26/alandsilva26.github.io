@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { homeHeaderImage } from "../data/media";
 
 function ProjectItemCards({ project }) {
   const { name, description, shortDescription, primaryLanguage } = project;
 
-  // const displayDesc = description != null ? description : shortDescription;
   return (
     <article className="project-item card">
       <div className="project-item--image">
-        <img src="images/astro.jpg" alt="a" />
+        <img src={homeHeaderImage} alt="a" />
       </div>
       <div className="project-item--body card-body">
         <h5 className="card-title">{name}</h5>
