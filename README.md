@@ -3,7 +3,7 @@
     <a href="https://github.com/alandsilva26/alandsilva26.github.io/workflows/Build/badge.svg?branch=master" >
         <img src="https://github.com/alandsilva26/alandsilva26.github.io/workflows/Build/badge.svg?branch=master" alt="Build status" />
     </a>
-    <a href="https://app.netlify.com/sites/laughing-ritchie-28dd23/deploys" >
+    <a href="https://app.netlify.com/sites/alandsilva/deploys" >
         <img src="https://api.netlify.com/api/v1/badges/5ffdb801-0fd8-4d4a-b2a3-558d13542d00/deploy-status" alt="Netlify deploy status" />
     </a>
     <a href="https://alandsilva26.github.io">
