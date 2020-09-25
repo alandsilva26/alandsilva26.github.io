@@ -7,7 +7,6 @@ import "bootstrap";
 import "./sass/main.scss";
 
 import * as firebase from "firebase/app";
-
 import "firebase/analytics";
 
 var firebaseConfig = {

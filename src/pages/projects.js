@@ -1,23 +1,18 @@
 import React from "react";
-import ProjectItemCards from "../components/project-item-cards";
-import myData from "../data/my-data";
+import { ProjectContext } from "../project-context";
 
 class Projects extends React.Component {
-  constructor() {
-    super();
-  }
+  static contextType = ProjectContext;
   render() {
-    const projectElements = myData.projects.map((project, index) => {
-      return (
-        <div key={index} className={`col-lg-3 col-md-4 col-sm-6`}>
-          <ProjectItemCards project={project}></ProjectItemCards>
-        </div>
-      );
-    });
+    const { projects, getProjectElements, loading } = this.context;
+
+    console.log(getProjectElements(projects));
     return (
       <section className="projects--all-projects">
         <div className="container">
-          <div className="row py-5">{projectElements}</div>
+          <div className="row py-5">
+            {loading ? "Loading" : getProjectElements(projects)}
+          </div>
         </div>
       </section>
     );
