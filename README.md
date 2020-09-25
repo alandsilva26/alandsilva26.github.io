@@ -1,4 +1,4 @@
-<h1 align="center">My Portfolio</h1>
+<a href="https://alandsilva.netlify.app"><img src="./other/media/Banner.png" /></a>
 <p align="center">
     <a href="https://github.com/alandsilva26/alandsilva26.github.io/workflows/Build/badge.svg?branch=master" >
         <img src="https://github.com/alandsilva26/alandsilva26.github.io/workflows/Build/badge.svg?branch=master" alt="Build status" />
