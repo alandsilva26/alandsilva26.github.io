@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header";
 import FeaturedProjects from "./featured-projects.js";
-import SkillsOverview from "./skills-overview.js";
+// import SkillsOverview from "./skills-overview.js";
 
 class Home extends React.Component {
   render() {

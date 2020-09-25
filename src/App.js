@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// require("dotenv").config();
+import { ProjectProvider } from "./project-context";
 
 //common
 import Navbar from "./components/Navbar/navbar";
@@ -37,11 +37,13 @@ function App() {
     return <Route exact path={path} component={component} key={index} />;
   });
   return (
-    <Router>
-      <Navbar routes={routes}></Navbar>
-      <Switch>{routeElements}</Switch>
-      <Footer routes={routes} />
-    </Router>
+    <ProjectProvider>
+      <Router>
+        <Navbar routes={routes}></Navbar>
+        <Switch>{routeElements}</Switch>
+        <Footer routes={routes} />
+      </Router>
+    </ProjectProvider>
   );
 }
 
