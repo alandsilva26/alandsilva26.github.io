@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import NavbarItem from "./navbar-item";
 import routes from "../../data/routes";
 
+//assets
+import logo from "../../images/favicon-32x32.png";
+
 function Navbar(props) {
   const navbarItems = routes.map((route, index) => {
     return route.name != null ? (
@@ -12,7 +15,7 @@ function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-sm">
       <Link to="/" className="navbar-brand pl-5">
-        Alan Dsilva
+        <img src={logo} alt="website logo" /> &nbsp;Alan Dsilva
       </Link>
       <button
         className="navbar-toggler"

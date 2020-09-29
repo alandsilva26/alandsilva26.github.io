@@ -8,7 +8,9 @@
       "slug": "sfit-college-app",
       "featured": true,
       "websiteLink": "",
-      "images": [],
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FApp%2Ftia4091998241796275821.png?alt=media&token=9dceaf0a-b3fa-4f14-a693-f05f53404427"
+      ],
       "tags": ["dart", "firebase", "fcm", "flutter", "android"],
       "primaryLanguage": {
         "name": "Dart",
@@ -96,8 +98,10 @@
       "github": "https://github.com/alandsilva26/shopping-cart-flutter",
       "slug": "shopping-cart-flutter",
       "featured": false,
-      "websiteLink": "",
-      "images": [],
+      "websiteLink": "https://alandsilva26.github.io/shopping-cart-flutter/",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FShopping-app%2Fcart-4-items.png?alt=media&token=879b027b-5940-4658-8b77-768ab1a7eeaa"
+      ],
       "tags": ["flutter", "barcode-scanner", "dart", "android"],
       "primaryLanguage": {
         "name": "Dart",
@@ -120,6 +124,91 @@
         "color": "#f1e05a"
       },
       "languages": []
+    },
+    {
+      "name": "Login Page",
+      "shortDescription": "A custom login page",
+      "description": "A login page I designed for my Semester 5 short projects. I referenced the design from a pinterest photo and tried to recreate it.",
+      "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-1.2",
+      "slug": "sem5-web-dev-assignment-1.2",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-1.2/index.html",
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-1.2/media/screenshot.png"
+      ],
+      "tags": ["login-page", "html-template", "web-design", "static-website"],
+      "primaryLanguage": {
+        "name": "HTML",
+        "color": "#e34c26"
+      },
+      "languages": ["HTML", "CSS"]
+    },
+    {
+      "name": "Django basic portfolio",
+      "shortDescription": "A basic portfolio website using Django which also includes a contact page.",
+      "description": "Converted a static portfolio page into a django website. This project includes a contact manager with a form",
+      "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-4",
+      "slug": "sem5-web-dev-assignment-4",
+      "featured": false,
+      "websiteLink": "",
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-4/media/screenshot.png"
+      ],
+      "tags": ["python", "django", "portfolio"],
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": ["Python", "HTML", "CSS"]
+    },
+    {
+      "name": "Home Page",
+      "shortDescription": "A simple home page.",
+      "description": "Sem 5 short project. Home page reference taken from valorant, Sass and other websites. This project was really helpfull for learning some css concepts like ::before and ::after, transforms, etc.",
+      "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-2",
+      "slug": "sem5-web-dev-assignment-2",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-2/index.html",
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-2/media/screenshot.png"
+      ],
+      "tags": [
+        "home-page",
+        "html-template",
+        "web-design",
+        "static-website",
+        "valorant-website",
+        "css-buttons"
+      ],
+      "primaryLanguage": {
+        "name": "HTML",
+        "color": "#e34c26"
+      },
+      "languages": ["HTML", "CSS"]
+    },
+    {
+      "name": "JavaScript Mini Project",
+      "shortDescription": "Short javascript code snippets",
+      "description": "This project includes a javascript image carousel with pause and reset options along with option to set custom interval. A calculator with actual buttons and finally an email validator using regex.",
+      "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-3",
+      "slug": "sem5-web-dev-assignment-3",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-3/index.html",
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-3/media/screenshot.png"
+      ],
+      "tags": [
+        "javascript-project",
+        "javascript",
+        "javascript-carousel",
+        "email-validator",
+        "calculator"
+      ],
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
+      "languages": ["HTML", "CSS", "JavaScript"]
     }
   ]
 }

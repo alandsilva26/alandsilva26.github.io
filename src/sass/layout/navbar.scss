@@ -1,8 +1,24 @@
-.navbar {
-  color: $primary-purple;
-}
+// .navbar {
+//   color: $primary-purple;
+// }
 
 .navbar-brand {
   font-weight: bold;
   color: $primary-purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  color: $primary-purple;
+}
+
+.nav-link {
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.1);
 }

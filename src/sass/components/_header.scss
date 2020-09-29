@@ -20,6 +20,13 @@ header {
     font-size: 5rem;
     font-weight: bold;
   }
+  @media screen and (max-width: $breakpoint-mobile) {
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
 }
 
 .header--home-overlay {
@@ -39,7 +46,7 @@ header {
 }
 
 .header--home-overlay:nth-child(2) {
-  background-color: #fde8e8;
+  background-color: $primary-pink;
   background-image: url("../../images/base2.svg");
   z-index: -3;
 }
