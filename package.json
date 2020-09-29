@@ -24,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "sitemap": "./node_modules/.bin/babel-node src/config/sitemap.js",
+    "prebuild": "npm run sitemap",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -46,10 +48,15 @@
     ]
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^4.5.2",
     "dotenv": "^8.2.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sitemap": "^6.3.2"
   }
 }
