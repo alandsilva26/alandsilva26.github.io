@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectContext } from "../project-context";
+import Spinner from "../components/spinner";
 
 class Projects extends React.Component {
   static contextType = ProjectContext;
@@ -11,7 +12,7 @@ class Projects extends React.Component {
       <section className="projects--all-projects">
         <div className="container">
           <div className="row py-5">
-            {loading ? "Loading" : getProjectElements(projects)}
+            {loading ? <Spinner /> : getProjectElements(projects)}
           </div>
         </div>
       </section>

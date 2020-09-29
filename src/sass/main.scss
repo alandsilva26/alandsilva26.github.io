@@ -2,20 +2,22 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-//base
-@import "base/reset";
-
 //abstracts
 @import "abstracts/variables";
+
+//base
+@import "base/reset";
 
 //layout
 @import "layout/navbar";
 
 //vendors
 @import "vendors/bootstrap";
+@import "vendors/spinner";
 
 //pages
 @import "pages/home";
+@import "pages/projects";
 
 //components
 @import "components/header";

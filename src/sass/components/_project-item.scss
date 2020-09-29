@@ -11,17 +11,6 @@
   transform: scale(1);
   text-overflow: ellipsis;
 
-  .card-text {
-    color: rgb(224, 224, 224);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    -webkit-box-orient: vertical;
-    letter-spacing: 0.5px;
-    font-family: "Roboto", sans-serif;
-  }
-
   .project-item--image {
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -40,7 +29,7 @@
     color: black;
     padding: 5px 3px;
     border-radius: 16px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 40%;
     text-overflow: ellipsis;
@@ -53,9 +42,20 @@
   }
 
   .project-item--body {
-    color: white;
+    color: black;
     background-color: transparent !important;
     z-index: 3;
+  }
+
+  .card-text {
+    color: rgb(224, 224, 224);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif;
   }
 
   .project-item--body::before {
@@ -78,7 +78,6 @@
   transform: scale(1.03);
 
   .project-item--body::before {
-    // background-color: red;
     transition: transform 0.3s ease;
     transform: rotate(0deg);
     transform: translateY(20px);

@@ -1,5 +1,6 @@
 import Projects from "../pages/projects";
 import Home from "../pages/Home/home";
+import About from "../pages/about";
 
 const routes = [
   {
@@ -19,7 +20,7 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    component: null,
+    component: About,
   },
 ];
 

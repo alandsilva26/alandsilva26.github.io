@@ -12,7 +12,7 @@ class FeaturedProjects extends React.Component {
         <div className="container">
           <div className="row py-5">
             {loading ? (
-              <h1>"LOADING"</h1>
+              <div class="loader">Loading...</div>
             ) : (
               getProjectElements(featuredProjects)
             )}
