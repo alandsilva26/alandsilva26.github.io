@@ -1,18 +1,17 @@
-@import "header-overlay";
 @import "featured-projects";
 @import "skills-overview";
 .home {
-  header {
-    width: 100%;
-    height: 91vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  // header {
+  //   width: 100%;
+  //   height: 91vh;
+  //   color: white;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex-direction: column;
 
-    h1 {
-      font-size: 4rem;
-    }
-  }
+  //   h1 {
+  //     font-size: 4rem;
+  //   }
+  // }
 }

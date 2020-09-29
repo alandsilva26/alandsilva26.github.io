@@ -1,9 +1,13 @@
+.navbar {
+  height: $navbar-height;
+}
+
 .nav-item {
   margin-left: 3em;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 1);
+.navbar-nav .nav-link {
+  // color: rgba(255, 255, 255, 1);
 }
 
 footer {

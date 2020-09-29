@@ -24,7 +24,9 @@
       "slug": "beach-resort-react",
       "websiteLink": "beach-resort-react",
       "featured": true,
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/beach-resort-react/master/media/home-top.png"
+      ],
       "tags": ["react", "reactjs", "react-router", "hotel-booking", "resort"],
       "primaryLanguage": {
         "name": "JavaScript",
@@ -35,13 +37,16 @@
     {
       "name": "Mock Website",
       "shortDescription": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
-      "description": "",
+      "description": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
       "github": "https://github.com/alandsilva26/mock-website",
       "slug": "mock-website",
       "websiteLink": "https://alandsilva26.github.io/mock-website/",
       "featured": true,
-      "images": [],
-      "tags": ["blog", "eccomerce", "photo-gallery"],
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-home-top.png",
+        "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-gallery-top.png"
+      ],
+      "tags": ["blog", "eccomerce", "photo-gallery", "static-website"],
       "primaryLanguage": {
         "name": "HTML",
         "color": "#e34c26"
@@ -60,6 +65,56 @@
         "https://raw.githubusercontent.com/alandsilva26/github-nostalgia/master/screenshots/extension1.png"
       ],
       "tags": ["chrome-extension", "dom-manipulation", "web-extensions"],
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
+      "languages": []
+    },
+    {
+      "name": "Meme Generator",
+      "shortDescription": "A basic meme generator using react and random images.",
+      "description": "A basic meme generator which takes top and bottom text and overlays it above a random meme image taken from meme generator api.",
+      "github": "https://github.com/alandsilva26/meme-generator-react",
+      "slug": "meme-generator-react",
+      "featured": false,
+      "websiteLink": "",
+      "images": [
+        "https://github.com/alandsilva26/meme-generator-react/raw/master/screenshots/preview1.png"
+      ],
+      "tags": ["react", "react-dom", "meme-generator", "memes"],
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
+      "languages": []
+    },
+    {
+      "name": "Shopping cart flutter",
+      "shortDescription": "A basic shopping cart application built with flutter",
+      "description": "A basic shopping cart application built with flutter with barcode scanning function to add items to cart, credit card info screen. This app uses basic static github api as previous api was deprecated, retaining all previous logic",
+      "github": "https://github.com/alandsilva26/shopping-cart-flutter",
+      "slug": "shopping-cart-flutter",
+      "featured": false,
+      "websiteLink": "",
+      "images": [],
+      "tags": ["flutter", "barcode-scanner", "dart", "android"],
+      "primaryLanguage": {
+        "name": "Dart",
+        "color": "#00B4AB"
+      },
+      "languages": []
+    },
+    {
+      "name": "To-Do App",
+      "shortDescription": "A basic todo web app using introductory React",
+      "description": "A basic todo web app using introductory React",
+      "github": "https://github.com/alandsilva26/todo-app-react",
+      "slug": "todo-app-react",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/todo-app-react",
+      "images": [],
+      "tags": ["react", "react-dom", "to-do"],
       "primaryLanguage": {
         "name": "JavaScript",
         "color": "#f1e05a"

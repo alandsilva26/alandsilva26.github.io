@@ -2,8 +2,9 @@
   height: 380px;
   border: 0;
   border-radius: 12px;
+  margin-bottom: 30px;
   background-color: transparent;
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease;
@@ -23,7 +24,7 @@
 
   .project-item--image {
     height: 200px;
-    // background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 
     img {
       display: block;
@@ -38,7 +39,7 @@
     color: black;
     padding: 5px 3px;
     border-radius: 16px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 40%;
     text-overflow: ellipsis;
