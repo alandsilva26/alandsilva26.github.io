@@ -62,7 +62,7 @@ const sitemap = new SitemapStream({
   hostname: "http://alandsilva.netlify.app",
 });
 
-const writeStream = createWriteStream("./public/sitemap.xml");
+const writeStream = createWriteStream("./public/sitemap_index.xml");
 sitemap.pipe(writeStream);
 
 ["/", "projects", "about"].map((item) => {
