@@ -1,12 +1,14 @@
 // console.log("HELLO");
 
 window.onload = () => {
-  // console.log("JDL");
-  const parallax = document.getElementsByClassName("home--header-overlay")[0];
+  const base = document.getElementsByClassName("header--home-overlay");
 
   window.addEventListener("scroll", () => {
     let offset = window.pageYOffset;
-    // console.log(window.pageYOffset);
-    parallax.style.backgroundPositionY = offset * 0.4 + "px";
+
+    base[0].style.backgroundPositionY = offset * 0.2 + "px";
+    base[1].style.backgroundPositionY = offset * 0.3 + "px";
+    base[2].style.backgroundPositionY = offset * 0.4 + "px";
+    base[3].style.backgroundPositionY = offset * 0.3 + "px";
   });
 };
