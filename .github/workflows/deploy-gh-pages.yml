@@ -18,6 +18,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+          name: My Workflow
+
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "https://alandsilva.netlify.app"
+          replace: "https://alandsilva26.github.io"
+
       - name: Install dependencies
         run: npm install
 
