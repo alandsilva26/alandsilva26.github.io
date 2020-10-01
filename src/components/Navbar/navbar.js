@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavbarItem from "./navbar-item";
 import routes from "../../data/routes";
+import { HiMenu } from "react-icons/hi";
 
 //assets
 import logo from "../../images/favicon-32x32.png";
@@ -26,7 +27,9 @@ function Navbar(props) {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <HiMenu />
+        {/* GiHamburgerMenu
+        <span className="navbar-toggler-icon"></span> */}
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto pr-5">{navbarItems}</ul>
