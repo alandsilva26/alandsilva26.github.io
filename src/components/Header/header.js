@@ -1,19 +1,44 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 import Navbar from "../Navbar/navbar";
-import { homeHeaderImage } from "../../data/media";
+class Header extends React.Component {
+  // console.log(this.props);
+  // console.log(history.location)
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     headerClass: "",
+  //   };
+  // }
 
-function Header() {
-  return (
-    <header>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={HomePageHeader} />
-        <Route exact path="/projects" component={ProjectsPageHeader} />
-      </Switch>
-    </header>
-  );
+  // componentDidMount() {
+  //   const homeClass = this.props.location.pathname === "/" ? "on-home" : "";
+  //   console.log("mount");
+  //   this.setState({
+  //     headerClass: homeClass,
+  //   });
+  // }
+
+  // componentDidUpdate() {
+  //   const homeClass = this.props.location.pathname === "/" ? "on-home" : "";
+  //   console.log("update");
+  //   this.setState({
+  //     headerClass: homeClass,
+  //   });
+  // }
+
+  render() {
+    return (
+      <header>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={HomePageHeader} />
+          <Route exact path="/projects" component={ProjectsPageHeader} />
+        </Switch>
+      </header>
+    );
+  }
 }
 
 function HomePageHeader() {
@@ -44,4 +69,4 @@ function ProjectsPageHeader() {
     </div>
   );
 }
-export default Header;
+export default withRouter(Header);
