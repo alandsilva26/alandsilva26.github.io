@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectContext } from "../../project-context";
+import Spinner from "../../components/spinner";
 
 class FeaturedProjects extends React.Component {
   static contextType = ProjectContext;
@@ -11,11 +12,7 @@ class FeaturedProjects extends React.Component {
       <section className="home--featured-projects">
         <div className="container">
           <div className="row py-5">
-            {loading ? (
-              <div class="loader">Loading...</div>
-            ) : (
-              getProjectElements(featuredProjects)
-            )}
+            {loading ? <Spinner /> : getProjectElements(featuredProjects)}
           </div>
         </div>
       </section>

@@ -4,8 +4,8 @@ import { final as homeHeaderImage } from "../data/media";
 
 function ProjectItemCards({ project }) {
   const { name, shortDescription, primaryLanguage, images } = project;
-  console.log(project);
-  console.log(images);
+  // console.log(project);
+  // console.log(images);
   return (
     <div className="col-lg-3 col-md-4 col-sm-6">
       <article className="project-item card">
