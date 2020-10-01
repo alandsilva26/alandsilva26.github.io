@@ -1,7 +1,11 @@
 {
-  "name": "Alan Dsilva",
-  "github": "https://github.com/alandsilva26",
-  "linkedin": "https://www.linkedin.com/in/alan-dsilva-289b77170/",
+  "user": {
+    "name": "Alan Anand Dsilva",
+    "avatarUrl": "https://avatars0.githubusercontent.com/u/47769063?s=460&u=9d1e0b05a782c92b926f89a0ec25502c94225fad&v=4",
+    "github": "https://github.com/alandsilva26",
+    "linkedin": "https://www.linkedin.com/in/alan-dsilva-289b77170/",
+    "email": "alandsilva2001@gmail.com"
+  },
   "projects": [
     {
       "name": "SFIT college app",
