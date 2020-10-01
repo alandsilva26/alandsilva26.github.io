@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "sitemap": "./node_modules/.bin/babel-node src/config/sitemap.js",
-    "prebuild": "npm run sitemap",
+    "runsitemap": "npm run sitemap",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
