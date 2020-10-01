@@ -48,7 +48,7 @@ class ProjectProvider extends React.Component {
       7999,
     ];
     const pickedColor = colors[Math.floor(Math.random() * colors.length)];
-    var date = new Date().toUTCString();
+    var date = new Date().toLocaleString();
     const article = {
       username: "Website bot",
       avatar_url: "https://i.imgur.com/4M34hi2.png",
