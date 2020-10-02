@@ -1,6 +1,4 @@
 header {
-  //   background-color: rgb(70, 28, 124);
-  // background-color: $projectItemColor;
   position: relative;
   .nav-link {
     color: $primary-purple !important;
@@ -11,12 +9,17 @@ header {
 .header--home {
   width: 100%;
   height: calc(100vh - #{$navbar-height});
-  // height: 90vh;
-  color: $primary-purple;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .primary-purple {
+    color: $primary-purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   h1 {
     font-size: 5rem;
@@ -29,17 +32,40 @@ header {
       font-size: 4rem;
     }
   }
-}
 
-// .header--home::before {
-//   background: red;
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
+  .social-icons {
+    position: absolute;
+    right: 0px;
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    svg {
+      color: $dark-blue;
+      width: 2em;
+      height: 2em;
+      margin: 20px 40px;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        margin: 30px 20px;
+      }
+    }
+  }
+}
 
 .header--home-overlay {
   height: 100%;
@@ -47,9 +73,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  // bottom: 0;
   z-index: -1;
-  // background: red !important;
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
