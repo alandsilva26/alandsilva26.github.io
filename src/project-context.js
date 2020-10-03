@@ -27,8 +27,14 @@ class ProjectProvider extends React.Component {
       const { user, projects } = data;
       console.log(user);
       const featuredProjects = projects
-        .map((project) => (project.featured === true ? project : null))
-        .slice(0, 4);
+        .map(
+          (project) =>
+            // project.featured === true ? project : null
+            project
+        )
+        .slice(0, 6);
+
+      console.log(featuredProjects.length);
 
       this.setState({
         user,
