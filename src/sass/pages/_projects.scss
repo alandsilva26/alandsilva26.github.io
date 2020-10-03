@@ -1,3 +1,52 @@
 .projects--all-projects {
   min-height: 60vh;
 }
+
+.projects--main {
+  background: $light-purple;
+  position: relative;
+
+  // $offset: 50px;
+  // $primary: $light-purple;
+
+  // .bumps {
+  //   div {
+  //     width: 150px;
+  //     height: $offset;
+  //     position: absolute;
+  //     background: $primary;
+  //     top: -$offset;
+  //   }
+
+  //   div:before {
+  //     content: "";
+  //     width: $offset;
+  //     height: $offset;
+  //     position: absolute;
+  //   }
+
+  //   .left-bump {
+  //     left: 0;
+  //   }
+
+  //   .left-bump:before {
+  //     right: -$offset;
+  //     border-top: calc(#{$offset/2}) solid transparent;
+  //     border-left: calc(#{$offset/2}) solid $primary;
+  //     border-right: calc(#{$offset/2}) solid transparent;
+  //     border-bottom: calc(#{$offset/2}) solid $primary;
+  //   }
+
+  //   .right-bump {
+  //     right: 0;
+  //   }
+
+  //   .right-bump:before {
+  //     left: -$offset;
+  //     border-top: calc(#{$offset/2}) solid transparent;
+  //     border-left: calc(#{$offset/2}) solid transparent;
+  //     border-right: calc(#{$offset/2}) solid $primary;
+  //     border-bottom: calc(#{$offset/2}) solid $primary;
+  //   }
+  // }
+}

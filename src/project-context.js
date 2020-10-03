@@ -58,7 +58,7 @@ class ProjectProvider extends React.Component {
     const article = {
       username: "Website bot",
       avatar_url: "https://i.imgur.com/4M34hi2.png",
-      content: "Someone visited your website",
+      content: "<@471707605476179969> Someone visited your website",
       embeds: [
         {
           title: `${date}`,

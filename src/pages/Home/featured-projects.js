@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectContext } from "../../project-context";
 import Spinner from "../../components/spinner";
+import { Link } from "react-router-dom";
 
 class FeaturedProjects extends React.Component {
   static contextType = ProjectContext;
@@ -17,7 +18,7 @@ class FeaturedProjects extends React.Component {
             </div>
             <div className="col-3">
               <h6 className="text-right">
-                <a href="/projects">View all</a>
+                <Link to="projects">View all</Link>
               </h6>
             </div>
           </div>

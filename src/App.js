@@ -2,14 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ProjectProvider } from "./project-context";
 import routes from "./data/routes";
+import ScrollToTop from "./config/scroll-to-top";
 
 //common
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-
-//Pages
-// import Home from "./pages/Home/home";
-// import Projects from "./pages/projects";
 
 function App() {
   const routeElements = routes.map(({ path, component }, index) => {
@@ -18,6 +15,7 @@ function App() {
   return (
     <ProjectProvider>
       <Router>
+        <ScrollToTop />
         <Header />
         <Switch>{routeElements}</Switch>
         <Footer routes={routes} />
