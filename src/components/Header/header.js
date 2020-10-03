@@ -1,5 +1,7 @@
 import React from "react";
+import SocialChips from "../social-chips";
 import { Route, Switch, withRouter } from "react-router-dom";
+import { ProjectContext } from "../../project-context";
 
 import Navbar from "../Navbar/navbar";
 class Header extends React.Component {
@@ -41,23 +43,28 @@ class Header extends React.Component {
   }
 }
 
-function HomePageHeader() {
-  return (
-    <div className="header--home">
-      <div className="header--home-overlay" />
-      <div className="header--home-overlay" />
-      <div className="header--home-overlay" />
-      <div className="header--home-overlay" />
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <div>Hi my name is</div>
-            <h1>Alan Dsilva</h1>
+class HomePageHeader extends React.Component {
+  static contextType = ProjectContext;
+  render() {
+    const { user } = this.context;
+    return (
+      <div className="header--home">
+        <div className="header--home-overlay" />
+        <div className="header--home-overlay" />
+        <div className="header--home-overlay" />
+        <div className="header--home-overlay" />
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 primary-purple">
+              <div>Hi my name is</div>
+              <h1>Alan Dsilva</h1>
+            </div>
           </div>
         </div>
+        <SocialChips />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 function ProjectsPageHeader() {

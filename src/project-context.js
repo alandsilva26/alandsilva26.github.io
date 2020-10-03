@@ -27,8 +27,14 @@ class ProjectProvider extends React.Component {
       const { user, projects } = data;
       console.log(user);
       const featuredProjects = projects
-        .map((project) => (project.featured === true ? project : null))
-        .slice(0, 4);
+        .map(
+          (project) =>
+            // project.featured === true ? project : null
+            project
+        )
+        .slice(0, 6);
+
+      console.log(featuredProjects.length);
 
       this.setState({
         user,
@@ -48,7 +54,7 @@ class ProjectProvider extends React.Component {
       7999,
     ];
     const pickedColor = colors[Math.floor(Math.random() * colors.length)];
-    var date = new Date().toUTCString();
+    var date = new Date().toLocaleString();
     const article = {
       username: "Website bot",
       avatar_url: "https://i.imgur.com/4M34hi2.png",

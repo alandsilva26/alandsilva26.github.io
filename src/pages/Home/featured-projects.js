@@ -11,7 +11,17 @@ class FeaturedProjects extends React.Component {
     return (
       <section className="home--featured-projects">
         <div className="container">
-          <div className="row py-5">
+          <div className="row justify-content-between">
+            <div className="col-3">
+              <h4 className="featured-projects--title">Featured</h4>
+            </div>
+            <div className="col-3">
+              <h6 className="text-right">
+                <a href="/projects">View all</a>
+              </h6>
+            </div>
+          </div>
+          <div className="row">
             {loading ? <Spinner /> : getProjectElements(featuredProjects)}
           </div>
         </div>
