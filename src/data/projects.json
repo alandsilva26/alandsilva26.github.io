@@ -9,8 +9,8 @@
   "projects": [
     {
       "name": "SFIT college app",
-      "shortDescription": "Android application for SFIT",
-      "description": "",
+      "shortDescription": "Android application for St. Francis Institute of Technology. App is for students and teachers with modern material UI.",
+      "description": "Android application for SFIT. This application has functionality for students and teachers both. Students can perform almost all actions which are available on erp including view attendance, marks, news, etc. Teachers can create modify polls on app which are sent to students in real time. ",
       "github": "",
       "slug": "sfit-college-app",
       "featured": true,
@@ -81,6 +81,47 @@
       "languages": []
     },
     {
+      "name": "Trice",
+      "shortDescription": "My Arch linux configuration files, specifically for i3 window manager.",
+      "description": "Majority of this config is derived from Luke Smith's i3wm configuration. I have derived my config from a lot of different sources. I have made a lot of major changes. Named Trice because i use two machines, a desktop pc 'Lenovo ThinkCenter' and a laptop 'Lenovo ThinkPad', hence \"Trice\"!!(Also because i could not think of anything else).",
+      "github": "https://github.com/alandsilva26/Trice",
+      "slug": "trice",
+      "featured": false,
+      "websiteLink": "",
+      "images": [],
+      "tags": [
+        "linux-config",
+        "arch-linux",
+        "i3",
+        "i3wm",
+        "linux",
+        "i3-gaps",
+        "vim",
+        "neovim-dotfiles"
+      ],
+      "primaryLanguage": {
+        "name": "Shell",
+        "color": "#89e051"
+      },
+      "languages": []
+    },
+    {
+      "name": "Exam marks confirmation",
+      "shortDescription": "Semester 5 java mini project which allows students to fill their internal exam marks themselves",
+      "description": "Semester 5 java mini project which allows students to fill their internal exam marks themselves. This project was made using JavaFX and JPheonix Material design libraries, font-awesome icons. The main purpose of this project was to showcase database operations. This project also includes dynamic tables.",
+      "github": "https://github.com/alandsilva26/Java-Project-Sem-3",
+      "slug": "Java-Project-Sem-3",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["javafx", "jpheonix", "mysqlconnector", "javagui"],
+      "primaryLanguage": {
+        "name": "Java",
+        "color": "#b07219"
+      },
+      "languages": []
+    },
+    {
       "name": "Meme Generator",
       "shortDescription": "A basic meme generator using react and random images.",
       "description": "A basic meme generator which takes top and bottom text and overlays it above a random meme image taken from meme generator api.",
@@ -133,6 +174,24 @@
       "languages": []
     },
     {
+      "name": "Php product manager",
+      "shortDescription": "A simple php project. Includes a prime number generator withing given range and product manager using ajax",
+      "description": "Using this you can add entry to database and perform delete action. All actions are performed asynchronously using AJAX. Database used is mysql with backend as php. Also includes a prime number generator withing given range.",
+      "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-5",
+      "slug": "sem5-web-dev-assignment-5",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-5/",
+      "images": [
+        "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-5/media/screenshot.png"
+      ],
+      "tags": ["primenumber", "php", "mysql", "product-manager", "ajax"],
+      "primaryLanguage": {
+        "name": "PHP",
+        "color": "#4F5D95"
+      },
+      "languages": ["PHP", "HTML", "JavaScript", "CSS"]
+    },
+    {
       "name": "Login Page",
       "shortDescription": "A custom login page",
       "description": "A login page I designed for my Semester 5 short projects. I referenced the design from a pinterest photo and tried to recreate it.",
@@ -170,7 +229,7 @@
     },
     {
       "name": "Home Page",
-      "shortDescription": "A simple home page.",
+      "shortDescription": "A home page design website using vanilla html, css.",
       "description": "Sem 5 short project. Home page reference taken from valorant, Sass and other websites. This project was really helpfull for learning some css concepts like ::before and ::after, transforms, etc.",
       "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-2",
       "slug": "sem5-web-dev-assignment-2",
@@ -194,8 +253,24 @@
       "languages": ["HTML", "CSS"]
     },
     {
+      "name": "Email Client JavaFX",
+      "shortDescription": "A basic email client using JavaFX and gmail",
+      "description": "A basic email client using JavaFX and gmail. Displays multiple inboxes.",
+      "github": "https://github.com/alandsilva26/EmailClient",
+      "slug": "EmailClient",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["javafx", "javagui"],
+      "primaryLanguage": {
+        "name": "Java",
+        "color": "#b07219"
+      },
+      "languages": []
+    },
+    {
       "name": "JavaScript Mini Project",
-      "shortDescription": "Short javascript code snippets",
+      "shortDescription": "Javascript image carousel, calculator and email validator.",
       "description": "This project includes a javascript image carousel with pause and reset options along with option to set custom interval. A calculator with actual buttons and finally an email validator using regex.",
       "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-3",
       "slug": "sem5-web-dev-assignment-3",
@@ -216,6 +291,38 @@
         "color": "#f1e05a"
       },
       "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "Pattern",
+      "shortDescription": "Algorithms in C for generating basic patterns",
+      "description": "Algorithms in C for generating basic patterns",
+      "github": "https://github.com/alandsilva26/Pattern",
+      "slug": "Pattern",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["gcc", "algorithms", "C", "patterns"],
+      "primaryLanguage": {
+        "name": "C",
+        "color": "#555555"
+      },
+      "languages": []
+    },
+    {
+      "name": "CSS Basic Animations",
+      "shortDescription": "CSS basic animations source code for reference",
+      "description": "CSS Mini templates for reference",
+      "github": "https://github.com/alandsilva26/CSS-Basic-Animations",
+      "slug": "CSS-Basic-Animations",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/CSS-Basic-Animations/",
+      "images": [""],
+      "tags": ["CSS", "animations"],
+      "primaryLanguage": {
+        "name": "CSS",
+        "color": "#563d7c"
+      },
+      "languages": []
     }
   ]
 }

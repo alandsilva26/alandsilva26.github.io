@@ -1,100 +1,11 @@
+@import "./header--home";
+@import "./header--projects";
+@import "./header--about";
+
 header {
   position: relative;
   .nav-link {
     color: $primary-purple !important;
     font-weight: bold;
   }
-}
-
-.header--home {
-  width: 100%;
-  height: calc(100vh - #{$navbar-height});
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  .primary-purple {
-    color: $primary-purple;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 5rem;
-    font-weight: bold;
-  }
-  @media screen and (max-width: $breakpoint-mobile) {
-    text-align: center;
-
-    h1 {
-      font-size: 4rem;
-    }
-  }
-
-  .social-icons {
-    position: absolute;
-    right: 0px;
-
-    button {
-      background: transparent;
-      border: none;
-    }
-
-    button:focus {
-      outline: none;
-    }
-
-    svg {
-      color: $dark-blue;
-      width: 2em;
-      height: 2em;
-      margin: 20px 40px;
-    }
-
-    @media screen and (max-width: $breakpoint-mobile) {
-      bottom: 0px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-
-      svg {
-        margin: 30px 20px;
-      }
-    }
-  }
-}
-
-.header--home-overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
-.header--home-overlay:nth-child(1) {
-  background-image: url("../../images/base1.svg");
-}
-
-.header--home-overlay:nth-child(2) {
-  background-color: $primary-pink;
-  background-image: url("../../images/base2.svg");
-  z-index: -3;
-}
-
-.header--home-overlay:nth-child(3) {
-  background-image: url("../../images/base3.svg");
-  z-index: -2;
-}
-
-.header--home-overlay:nth-child(4) {
-  background-image: url("../../images/base4.svg");
-  z-index: -1;
 }

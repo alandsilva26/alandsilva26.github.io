@@ -1,6 +1,5 @@
 import React from "react";
 import myData from "../data/my-data";
-import copyToClipboard from "../services/copy-to-clipboard";
 
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
@@ -24,10 +23,9 @@ function SocialChips() {
       </div>
       <div>
         <a
-          href={
-            "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=alandsilva2001@gmail.com"
-          }
+          href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${email}`}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <HiOutlineMail />
         </a>

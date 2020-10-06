@@ -9,7 +9,11 @@ class Projects extends React.Component {
 
     console.log(getProjectElements(projects));
     return (
-      <section className="projects--all-projects">
+      <section className="projects--main">
+        <div className="bumps">
+          <div className="left-bump" />
+          <div className="right-bump" />
+        </div>
         <div className="container">
           <div className="row py-5">
             {loading ? <Spinner /> : getProjectElements(projects)}

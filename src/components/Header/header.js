@@ -1,7 +1,6 @@
 import React from "react";
 import SocialChips from "../social-chips";
 import { Route, Switch, withRouter } from "react-router-dom";
-import { ProjectContext } from "../../project-context";
 
 import Navbar from "../Navbar/navbar";
 class Header extends React.Component {
@@ -37,6 +36,7 @@ class Header extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePageHeader} />
           <Route exact path="/projects" component={ProjectsPageHeader} />
+          <Route exact path="/about" component={AboutPageHeader} />
         </Switch>
       </header>
     );
@@ -44,9 +44,7 @@ class Header extends React.Component {
 }
 
 class HomePageHeader extends React.Component {
-  static contextType = ProjectContext;
   render() {
-    const { user } = this.context;
     return (
       <div className="header--home">
         <div className="header--home-overlay" />
@@ -70,9 +68,18 @@ class HomePageHeader extends React.Component {
 function ProjectsPageHeader() {
   return (
     <div className="header--projects">
+      <div className="header--project-overlay" />
       <div className="container">
         <h1>Projects</h1>
       </div>
+    </div>
+  );
+}
+
+function AboutPageHeader() {
+  return (
+    <div className="header--about">
+      <div className="header--about-overlay" />
     </div>
   );
 }

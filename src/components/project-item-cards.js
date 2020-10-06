@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
 
 function ProjectItemCards({ project }) {
-  const { name, shortDescription, primaryLanguage, images, github } = project;
+  const { name, shortDescription, primaryLanguage, github } = project;
 
   let formattedDescription = shortDescription;
 
@@ -12,7 +12,7 @@ function ProjectItemCards({ project }) {
 
   return (
     <div className="col-lg-4 col-md-6 col-sm-12 project-item--wrapper">
-      <article class="project-item text-break p-3">
+      <article className="project-item text-break p-3">
         <div className="project-item--body ">
           <h6 className="project-item--title">
             <a href={github}>{name}</a>
@@ -43,8 +43,7 @@ function ProjectItemCards({ project }) {
 
 export default ProjectItemCards;
 
-{
-  /* <article className="project-item card">
+/* <article className="project-item card">
         <div className="project-item--image">
           <img src={images == null ? homeHeaderImage : images[0]} alt="a" />
         </div>
@@ -60,4 +59,3 @@ export default ProjectItemCards;
           <Link to={`/projects/${project.slug}`} className="stretched-link" />
         </div>
       </article> */
-}

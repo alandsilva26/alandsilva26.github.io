@@ -28,13 +28,13 @@
 }
 
 @media screen and (max-width: $breakpoint-tablet) {
-  .project-item--wrapper:nth-child(n + 5) {
+  .home--featured-projects .project-item--wrapper:nth-child(n + 5) {
     display: none;
   }
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
-  .project-item--wrapper:nth-child(n + 4) {
+  .home--featured-projects .project-item--wrapper:nth-child(n + 4) {
     display: none;
   }
 }
@@ -50,7 +50,7 @@
 
 .project-item--footer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   font-size: 0.8em;
 

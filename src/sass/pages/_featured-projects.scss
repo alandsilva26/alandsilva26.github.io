@@ -4,6 +4,28 @@
   padding: 2em 0em 2em 0em;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .heading-row {
+    .featured-projects--cell {
+      font-size: 1em;
+      font-weight: bold;
+      padding: 1em 0.5em 1em 0.5em;
+      color: rgb(51, 51, 51);
+
+      a {
+        color: inherit;
+      }
+    }
+
+    .text-left {
+      padding-left: calc(15px + 0.5em);
+    }
+
+    .text-right {
+      font-size: 1em;
+      padding-right: calc(15px + 0.5em);
+    }
+  }
 }
 
 @mixin dimensions($px) {
@@ -30,14 +52,6 @@
   @media screen and (max-width: $breakpoint-mobile) {
     @include dimensions(50px);
   }
-}
-
-.featured-projects--title {
-  font-size: 1em;
-  font-weight: bold;
-  padding: 1em 0.5em 0.5em 0.5em;
-  // color: whitesmoke;
-  // font-weight: bold;
 }
 
 // .home--featured-projects::after {

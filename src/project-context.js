@@ -15,6 +15,7 @@ class ProjectProvider extends React.Component {
       featuredProjects: [],
       loading: true,
       headerClass: "",
+      steamProfile: {},
     };
   }
 
@@ -25,7 +26,7 @@ class ProjectProvider extends React.Component {
       const data = snapshot.val();
 
       const { user, projects } = data;
-      console.log(user);
+
       const featuredProjects = projects
         .map(
           (project) =>
@@ -33,8 +34,6 @@ class ProjectProvider extends React.Component {
             project
         )
         .slice(0, 6);
-
-      console.log(featuredProjects.length);
 
       this.setState({
         user,
@@ -58,7 +57,7 @@ class ProjectProvider extends React.Component {
     const article = {
       username: "Website bot",
       avatar_url: "https://i.imgur.com/4M34hi2.png",
-      content: "Someone visited your website",
+      content: "<@471707605476179969> Someone visited your website",
       embeds: [
         {
           title: `${date}`,
@@ -74,6 +73,32 @@ class ProjectProvider extends React.Component {
           console.log("Sent");
         });
     }
+
+    this.steamApi().then((response) => {
+      if (response === null || response === undefined) {
+        return;
+      }
+      this.setState({
+        steamProfile: { ...response[0] },
+      });
+    });
+  }
+
+  steamApi() {
+    const url =
+      "https://cors-anywhere.herokuapp.com/" +
+      `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.REACT_APP_STEAM_API_KEY}&steamids=${process.env.REACT_APP_STEAM_ID}`;
+    const steamResponse = fetch(url, {
+      mode: "cors",
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then(({ response }) => response.players)
+      .catch((error) => {
+        console.log(error);
+      });
+
+    return steamResponse;
   }
 
   getProjectElements(projects) {
