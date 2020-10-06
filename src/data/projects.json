@@ -106,6 +106,22 @@
       "languages": []
     },
     {
+      "name": "Exam marks confirmation",
+      "shortDescription": "Semester 5 java mini project which allows students to fill their internal exam marks themselves",
+      "description": "Semester 5 java mini project which allows students to fill their internal exam marks themselves. This project was made using JavaFX and JPheonix Material design libraries, font-awesome icons. The main purpose of this project was to showcase database operations. This project also includes dynamic tables.",
+      "github": "https://github.com/alandsilva26/Java-Project-Sem-3",
+      "slug": "Java-Project-Sem-3",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["javafx", "jpheonix", "mysqlconnector", "javagui"],
+      "primaryLanguage": {
+        "name": "Java",
+        "color": "#b07219"
+      },
+      "languages": []
+    },
+    {
       "name": "Meme Generator",
       "shortDescription": "A basic meme generator using react and random images.",
       "description": "A basic meme generator which takes top and bottom text and overlays it above a random meme image taken from meme generator api.",
@@ -237,6 +253,22 @@
       "languages": ["HTML", "CSS"]
     },
     {
+      "name": "Email Client JavaFX",
+      "shortDescription": "A basic email client using JavaFX and gmail",
+      "description": "A basic email client using JavaFX and gmail. Displays multiple inboxes.",
+      "github": "https://github.com/alandsilva26/EmailClient",
+      "slug": "EmailClient",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["javafx", "javagui"],
+      "primaryLanguage": {
+        "name": "Java",
+        "color": "#b07219"
+      },
+      "languages": []
+    },
+    {
       "name": "JavaScript Mini Project",
       "shortDescription": "Javascript image carousel, calculator and email validator.",
       "description": "This project includes a javascript image carousel with pause and reset options along with option to set custom interval. A calculator with actual buttons and finally an email validator using regex.",
@@ -259,6 +291,38 @@
         "color": "#f1e05a"
       },
       "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "Pattern",
+      "shortDescription": "Algorithms in C for generating basic patterns",
+      "description": "Algorithms in C for generating basic patterns",
+      "github": "https://github.com/alandsilva26/Pattern",
+      "slug": "Pattern",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["gcc", "algorithms", "C", "patterns"],
+      "primaryLanguage": {
+        "name": "C",
+        "color": "#555555"
+      },
+      "languages": []
+    },
+    {
+      "name": "CSS Basic Animations",
+      "shortDescription": "CSS basic animations source code for reference",
+      "description": "CSS Mini templates for reference",
+      "github": "https://github.com/alandsilva26/CSS-Basic-Animations",
+      "slug": "CSS-Basic-Animations",
+      "featured": false,
+      "websiteLink": "https://alandsilva26.github.io/CSS-Basic-Animations/",
+      "images": [""],
+      "tags": ["CSS", "animations"],
+      "primaryLanguage": {
+        "name": "CSS",
+        "color": "#563d7c"
+      },
+      "languages": []
     }
   ]
 }

@@ -12,14 +12,14 @@ class FeaturedProjects extends React.Component {
     return (
       <section className="home--featured-projects">
         <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-3">
-              <h4 className="featured-projects--title">Featured</h4>
+          <div className="row heading-row justify-content-between">
+            <div className="col-xs">
+              <h4 className="text-left featured-projects--cell">Featured</h4>
             </div>
-            <div className="col-3">
-              <h6 className="text-right">
+            <div className="col-xs">
+              <h4 className="text-right featured-projects--cell">
                 <Link to="projects">View all</Link>
-              </h6>
+              </h4>
             </div>
           </div>
           <div className="row">

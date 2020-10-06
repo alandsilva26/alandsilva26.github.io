@@ -36,6 +36,7 @@ class Header extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePageHeader} />
           <Route exact path="/projects" component={ProjectsPageHeader} />
+          <Route exact path="/about" component={AboutPageHeader} />
         </Switch>
       </header>
     );
@@ -71,6 +72,14 @@ function ProjectsPageHeader() {
       <div className="container">
         <h1>Projects</h1>
       </div>
+    </div>
+  );
+}
+
+function AboutPageHeader() {
+  return (
+    <div className="header--about">
+      <div className="header--about-overlay" />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Projects from "../pages/projects";
 import Home from "../pages/Home/home";
-import About from "../pages/about";
+import About from "../pages/About/about";
 
 const routes = [
   {

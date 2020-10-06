@@ -1,103 +1,79 @@
 const myData = {
   name: "Alan Anand Dsilva",
-  description: "",
+  description:
+    "👋 Hi I am Alan - a computer science engineer currently pursuing my bachelors degree at St. Francis Institute of Technology. I code for fun and professional reasons. Most of the time I am funny all the time. In my free time I like to play videogames🎮. Occasionally I watch anime. I was in the school band so one might say that my taste in music is pretty loud.",
   avatarUrl:
-    "https://avatars0.githubusercontent.com/u/47769063?s=460&u=9d1e0b05a782c92b926f89a0ec25502c94225fad&v=4",
+    "https://media-exp1.licdn.com/dms/image/C4D03AQFmXkNuL7-Skg/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=Qdub0A-O4tvICh4siTvCSTwujfUzZZZUFKIcHSFAc2M",
   location: "India",
-  github: "https://github.com/alandsilva26",
+  github: "alandsilva26",
   linkedin: "https://www.linkedin.com/in/alan-dsilva-289b77170/",
+  codechef: "deathbringer26",
+  hackerrank: "alandsilva2001",
+  steam: "deathbringer269",
   email: "alandsilva2001@gmail.com",
-
-  // // top or imp projects on top
-  // projects: [
-  //   {
-  //     name: "SFIT college app",
-  //     shortDescription: "Android application for SFIT",
-  //     description: "",
-  //     github: "",
-  //     slug: "sfit-college-app",
-  //     featured: true,
-  //     websiteLink: "",
-  //     images: [],
-  //     tags: ["dart", "firebase", "fcm", "flutter", "android"],
-  //     primaryLanguage: {
-  //       name: "dart",
-  //       color: "#00B4AB",
-  //     },
-  //     languages: [],
-  //   },
-  //   {
-  //     name: "Beach resort react",
-  //     shortDescription: "A hotel reservation website created using React.js.",
-  //     description: "",
-  //     github: "https://github.com/alandsilva26/beach-resort-react",
-  //     slug: "beach-resort-react",
-  //     websiteLink: "beach-resort-react",
-  //     featured: true,
-  //     images: [],
-  //     tags: ["react", "reactjs", "react-router", "hotel-booking", "resort"],
-  //     primaryLanguage: {
-  //       name: "JavaScript",
-  //       color: "#f1e05a",
-  //     },
-  //     languages: [],
-  //   },
-  //   {
-  //     name: "Mock Website",
-  //     shortDescription:
-  //       "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
-  //     description: "",
-  //     github: "https://github.com/alandsilva26/mock-website",
-  //     slug: "mock-website",
-  //     websiteLink: "https://alandsilva26.github.io/mock-website/",
-  //     featured: true,
-  //     images: [],
-  //     tags: ["blog", "eccomerce", "photo-gallery"],
-  //     primaryLanguage: {
-  //       name: "HTML",
-  //       color: "#e34c26",
-  //     },
-  //     languages: [],
-  //   },
-  //   {
-  //     name: "Github nostalgia",
-  //     shortDescription: "Chrome extension to modify GitHub profile dom.",
-  //     description:
-  //       "Chrome extension to modify GitHub profile dom. This extension will customize GitHub to look similar to the old design. Also added ability to auto format the url of a currently playing YouTube video and display with current timestamp that you are on",
-  //     github: "https://github.com/alandsilva26/github-nostalgia",
-  //     slug: "github-nostalgia",
-  //     featured: true,
-  //     websiteLink: "",
-  //     images: [
-  //       "https://raw.githubusercontent.com/alandsilva26/github-nostalgia/master/screenshots/extension1.png",
-  //     ],
-  //     tags: ["chrome-extension", "dom-manipulation", "web-extensions"],
-  //     primaryLanguage: {
-  //       name: "JavaScript",
-  //       color: "#f1e05a",
-  //     },
-  //     languages: [],
-  //   },
-  // ],
+  technical: [
+    {
+      name: "Programming Languages",
+      content: [
+        "C",
+        "Java",
+        "Python",
+        "JavaScript",
+        "ECMAScript",
+        "HTML",
+        "CSS",
+        "Dart",
+        "Sass",
+        "PHP",
+        "SQL",
+        "C++",
+        "Markdown",
+        "Shell",
+      ],
+    },
+    {
+      name: "Frameworks",
+      content: ["React", "Flutter", "Django", "Bootstrap"],
+    },
+    {
+      name: "Libraries",
+      content: ["Jquery", "D3.js", "JavaFX"],
+    },
+    {
+      name: "Software",
+      content: ["git", "npm"],
+    },
+    {
+      name: "Technologies",
+      content: [
+        "Github",
+        "Github Actions",
+        "Firebase",
+        "TravisCI",
+        "Heroku",
+        "Github Pages",
+      ],
+    },
+    { name: "Tools", content: ["XAMPP", "Android Studio", "ngrok", "gcc"] },
+  ],
 };
 
 export default myData;
 
-// {
-//   name: "",
-//   shortDescription: "",
-//   description: "",
-//   github: "https://github.com/alandsilva26/",
-//   slug: "",
-//   featured: false,
-//   websiteLink: "",
-//   images: [
-//     "",
-//   ],
-//   tags: ["",],
-//   primaryLanguage: {
-//     name: "",
-//     color: "#",
+// project data schema
+//   {
+//     name: "Name of the project",
+//     shortDescription: "Short description less than 200 characters",
+//     description: "Long description",
+//     github: "Github url",
+//     slug: "Unique slug to identify",
+//     featured: <boolean value to identify featured or not>,
+//     websiteLink: "Website or any external link",
+//     images: [<Image url array(strings)>],
+//     tags: [<Custom tags array(strings)>],
+//     primaryLanguage: {
+//       name: "language name eg. JavaScript",
+//       color: "Color to identify (taken from colors.json)",
+//     },
+//     languages: [<Array of languages used in the project(String)>],
 //   },
-//   languages: [],
-// },
