@@ -28,13 +28,6 @@ function SocialLinks() {
           <AiFillGithub />
         </ListItemSocialData>
         <ListItemSocialData
-          prefixUrl="https://steamcommunity.com/id/"
-          postfixUrl={steam}
-          content={steam}
-        >
-          <FaSteam />
-        </ListItemSocialData>
-        <ListItemSocialData
           prefixUrl="https://www.codechef.com/users/"
           postfixUrl={codechef}
           content={codechef}
@@ -48,6 +41,13 @@ function SocialLinks() {
         >
           <SiHackerrank />
         </ListItemSocialData>
+        <ListItemSocialData
+          prefixUrl="https://steamcommunity.com/id/"
+          postfixUrl={steam}
+          content={steam}
+        >
+          <FaSteam />
+        </ListItemSocialData>
       </ul>
     </div>
   );
@@ -58,7 +58,7 @@ function ListItemSocialData({ prefixUrl, postfixUrl, children, content }) {
     <li className="list-group-item">
       <a className="cell-group" href={prefixUrl + postfixUrl}>
         <div className="cell">{children}</div>
-        <div className="cell"> &nbsp;{content}</div>
+        {/* <div className="cell"> &nbsp;{content}</div> */}
       </a>
     </li>
   );

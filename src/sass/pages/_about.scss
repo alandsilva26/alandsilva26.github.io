@@ -95,13 +95,13 @@
     justify-content: center;
 
     .list-group-item {
-      border: 1px solid white;
-      border-radius: 6px;
+      // border: 1px solid white;
+      border-radius: 2px;
       margin: 4px 8px;
-      padding: 3px 14px;
+      padding: 8px 14px;
       svg {
         color: white;
-        font-size: 1.4em;
+        font-size: 2.3em;
       }
     }
     @media screen and (max-width: $breakpoint-tablet) {
