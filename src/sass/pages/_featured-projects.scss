@@ -1,9 +1,18 @@
 .home--featured-projects {
   position: relative;
-  background: $light-purple;
-  padding: 2em 0em 2em 0em;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 5em 0em 5em 0em;
+  overflow: hidden;
+  // background-image: url("../../images/projects-2.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  // h1 {
+  //   font-size: 15em;
+  //   $border-white: white;
+  //   color: $light-purple;
+  //   text-shadow: -1px -1px 0 $border-white, 1px -1px 0 $border-white,
+  //     -1px 1px 0 $border-white, 1px 1px 0 $border-white;
+  // }
 
   .heading-row {
     .featured-projects--cell {
@@ -17,12 +26,18 @@
       }
     }
 
+    div.col-xs {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
     .text-left {
       padding-left: calc(15px + 0.5em);
     }
 
     .text-right {
-      font-size: 1em;
+      font-size: 0.8em;
       padding-right: calc(15px + 0.5em);
     }
   }

@@ -323,6 +323,22 @@
         "color": "#563d7c"
       },
       "languages": []
+    },
+    {
+      "name": "Building database applications in PHP",
+      "shortDescription": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
+      "description": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
+      "github": "https://github.com/alandsilva26/building-database-applications-in-php-Coursera",
+      "slug": "building-database-applications-in-php-Coursera",
+      "featured": false,
+      "websiteLink": "",
+      "images": [""],
+      "tags": ["coursera", "course-files", "building-web-applications-in-php"],
+      "primaryLanguage": {
+        "name": "PHP",
+        "color": "#4F5D95"
+      },
+      "languages": []
     }
   ]
 }

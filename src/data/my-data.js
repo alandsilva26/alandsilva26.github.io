@@ -1,7 +1,7 @@
 const myData = {
   name: "Alan Anand Dsilva",
   description:
-    "👋 Hi I am Alan - a computer science engineer currently pursuing my bachelors degree at St. Francis Institute of Technology. I code for fun and professional reasons. Most of the time I am funny all the time. In my free time I like to play videogames🎮. Occasionally I watch anime. I was in the school band so one might say that my taste in music is pretty loud.",
+    "👋 Hi I am Alan - a computer science engineer currently pursuing my bachelors degree at St. Francis Institute of Technology. I code for fun and professional reasons. I create software for android and web platforms. In my free time I like to play videogames🎮. Occasionally I watch anime.",
   avatarUrl:
     "https://media-exp1.licdn.com/dms/image/C4D03AQFmXkNuL7-Skg/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=Qdub0A-O4tvICh4siTvCSTwujfUzZZZUFKIcHSFAc2M",
   location: "India",

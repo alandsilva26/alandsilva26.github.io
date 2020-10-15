@@ -14,6 +14,8 @@ class Projects extends React.Component {
           <div className="left-bump" />
           <div className="right-bump" />
         </div>
+        <div className="projects--background-image"></div>
+        <div className="background-color" />
         <div className="container">
           <div className="row py-5">
             {loading ? <Spinner /> : getProjectElements(projects)}
