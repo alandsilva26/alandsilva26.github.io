@@ -13,9 +13,7 @@ class FeaturedProjects extends React.Component {
     return (
       <section className="home--featured-projects">
         {/* <img className="home--featured-projects--background-image" src={projectBackground} alt="projects background" /> */}
-        <div className="projects--background-image">
-
-        </div>
+        <div className="projects--background-image"></div>
         <div className="background-color" />
         <div className="container">
           <div className="row heading-row justify-content-between">
