@@ -50,17 +50,56 @@
   //     border-bottom: calc(#{$offset/2}) solid $primary;
   //   }
   // }
+  .projects--form {
+    overflow: hidden;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 26px;
+    margin: 3em 0px;
+
+    div {
+      margin: 0px 6px;
+    }
+
+    input {
+      border: none;
+      margin: 0px 10px;
+    }
+
+    input:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    div:nth-child(-n + 3) {
+      input {
+        border: none;
+        border-right: 1px solid grey;
+        border-radius: 0;
+      }
+    }
+
+    div:nth-child(1) {
+      flex-grow: 2;
+    }
+  }
+}
+.projects--form.disabled {
+  background: #e9ecef;
 }
 
 .projects--background-image {
   display: block;
   position: absolute;
-  top: -80%;
+  top: -1500px;
   left: 0;
   width: 100%;
   height: 2960px;
   z-index: -1;
-  background-image: url("../../images/projects-2.png");
+  background-image: url("../../images/projects-3.png");
+  background-repeat: no-repeat;
   opacity: 0.5;
 }
 
