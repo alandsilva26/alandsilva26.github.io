@@ -10,6 +10,7 @@
 
 //layout
 @import "layout/navbar";
+@import "layout/footer";
 
 //vendors
 @import "vendors/bootstrap";
@@ -24,3 +25,4 @@
 //components
 @import "components/header";
 @import "components/project-item";
+@import "components/home--info-overview";

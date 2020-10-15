@@ -1,0 +1,26 @@
+footer {
+  color: white;
+
+  .title {
+    color: white;
+    padding: 6px 20px;
+    font-size: 1.1em;
+  }
+
+  li.list-group-item {
+    background: transparent;
+    border: none;
+    font-size: small;
+    padding: 6px 20px;
+
+    * {
+      color: skyblue;
+    }
+  }
+
+  .footer-copyright {
+    a {
+      color: skyblue;
+    }
+  }
+}
