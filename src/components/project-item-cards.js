@@ -1,8 +1,15 @@
 import React from "react";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
+import { HiOutlineLink } from "react-icons/hi";
 
 function ProjectItemCards({ project }) {
-  const { name, shortDescription, primaryLanguage, github } = project;
+  const {
+    name,
+    shortDescription,
+    primaryLanguage,
+    github,
+    websiteLink,
+  } = project;
 
   let formattedDescription = shortDescription;
 
@@ -35,6 +42,14 @@ function ProjectItemCards({ project }) {
               <AiOutlineGithub />
             </a>
           </div>
+
+          {websiteLink !== "" && websiteLink !== undefined ? (
+            <div className="icons">
+              <a href={websiteLink}>
+                <HiOutlineLink />
+              </a>
+            </div>
+          ) : null}
         </div>
       </article>
     </div>

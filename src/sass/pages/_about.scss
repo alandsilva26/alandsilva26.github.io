@@ -15,7 +15,7 @@
 .about {
   // background: whitesmoke;
   background-color: $primary-pink;
-  background-image: url("../../images/marble.svg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/marble.svg?alt=media&token=143bbf78-7310-444f-bc50-cf26b8e08773");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -83,6 +83,10 @@
     color: $grey;
     .cell {
       font-size: 0.9em;
+
+      a {
+        color: $grey;
+      }
     }
   }
 

@@ -3,6 +3,7 @@ import React from "react";
 //icons
 import { MdLocationOn } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
+import { BiBuildingHouse } from "react-icons/bi";
 
 import myData from "../../data/my-data";
 
@@ -15,7 +16,7 @@ function PersonalData(props) {
         {props.game && (
           <ListItemPersonalData
             extra="game"
-            content={props.game}
+            content={"Playing " + props.game}
           ></ListItemPersonalData>
         )}
         <ListItemPersonalData content={myData.location}>
@@ -24,12 +25,18 @@ function PersonalData(props) {
         <ListItemPersonalData content={email}>
           <HiOutlineMail />
         </ListItemPersonalData>
+        <ListItemPersonalData
+          content={"St. Francis Institute of Technology"}
+          link={"https://www.sfit.ac.in/"}
+        >
+          <BiBuildingHouse />
+        </ListItemPersonalData>
       </ul>
     </div>
   );
 }
 
-function ListItemPersonalData({ children, content, extra }) {
+function ListItemPersonalData({ children, content, extra, link }) {
   const classAppend = extra !== undefined ? extra : "";
   return (
     <li className="list-group-item ">
@@ -37,7 +44,11 @@ function ListItemPersonalData({ children, content, extra }) {
         <div className="cell">{children}</div>
         <div className={"cell" + classAppend}>
           &nbsp;
-          {content}
+          {link !== undefined && link !== "" ? (
+            <a href={link}>{content}</a>
+          ) : (
+            content
+          )}
         </div>
       </h6>
     </li>
