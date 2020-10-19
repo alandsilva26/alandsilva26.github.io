@@ -185,6 +185,12 @@ class ProjectProvider extends React.Component {
             }
           }
         }
+
+        if (item.hasOwnProperty("primaryLanguage") && !containsLanguage) {
+          if (item.primaryLanguage.name.toLowerCase().includes(language)) {
+            containsLanguage = true;
+          }
+        }
         if (containsLanguage) {
           return item;
         }

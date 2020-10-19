@@ -12,8 +12,8 @@ class Home extends React.Component {
         {/* <SkillsOverview /> */}
         <div className="home--info-overview bg-light">
           <div className="container">
-            <div className="row justify-content-between">
-              <div className="col-12 col-md-6">
+            <div className="row justify-content-around">
+              <div className="col-12 col-md-5">
                 <div className="image-wrapper">
                   <img
                     src={codeSs}
@@ -72,16 +72,9 @@ class Home extends React.Component {
                 </h6>
                 <div className="info-about">
                   <small>
-                    This website is built with React.js (context api) and{" "}
-                    <a
-                      href="https://sass-lang.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Sass
-                    </a>{" "}
-                    for styling.Firebase for analytics and data storage
-                    (realtime database). This website is hosted on Netlify and
+                    This website is built with React.js along with Firebase for
+                    analytics and data storage (realtime database). This website
+                    is hosted on Netlify and
                     <a
                       href="https://alandsilva26.github.io"
                       target="_blank"
@@ -105,23 +98,6 @@ class Home extends React.Component {
                       rel="noopener noreferrer"
                     >
                       Netlify auto deploy
-                    </a>
-                    .I have also used{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                      Steam api
-                    </a>{" "}
-                    to display if I am currently playing a game. In addition
-                    each time someone visits this website a{" "}
-                    <a
-                      href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Discord webhook
-                    </a>{" "}
-                    is triggered which sends me a message on my{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                      discord server
                     </a>
                     .
                   </small>
