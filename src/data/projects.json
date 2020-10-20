@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "user": {
     "name": "Alan Anand Dsilva",
     "avatarUrl": "https://avatars0.githubusercontent.com/u/47769063?s=460&u=9d1e0b05a782c92b926f89a0ec25502c94225fad&v=4",
@@ -15,7 +15,7 @@
       "github": "",
       "slug": "sfit-college-app",
       "featured": true,
-      "websiteLink": "",
+      "websiteLink": "https://play.google.com/store/apps/details?id=org.sfit.sfitapp",
       "images": [
         "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FApp%2Ftia4091998241796275821.png?alt=media&token=9dceaf0a-b3fa-4f14-a693-f05f53404427"
       ],
