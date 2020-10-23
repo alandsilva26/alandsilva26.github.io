@@ -1,5 +1,5 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineLink } from "react-icons/hi";
 
@@ -11,7 +11,7 @@ function ProjectItemCards({ project }) {
     github,
     websiteLink,
     featured,
-    slug
+    slug,
   } = project;
 
   let formattedDescription = shortDescription;
@@ -27,8 +27,8 @@ function ProjectItemCards({ project }) {
       <article className="project-item text-break p-3">
         <div className="project-item--body ">
           <h6 className="project-item--title">
-            {/* <a href={github}>{name}</a> */}
-            <Link to={`/projects/${slug}`} >{name}</Link>
+            <a href={github}>{name}</a>
+            {/* <Link to={`/projects/${slug}`} >{name}</Link> */}
           </h6>
           <p>{formattedDescription}</p>
         </div>
@@ -38,28 +38,26 @@ function ProjectItemCards({ project }) {
             style={{ backgroundColor: primaryLanguage.color }}
           ></div>
           <div className="project-item--language">{primaryLanguage.name}</div>
-          {
-          github !== "" && github !== undefined 
-          ? <div className={starClass}>
-            <a href={github + "/stargazers"}>
+          {github !== "" && github !== undefined ? (
+            <div className={starClass}>
+              <a href={github + "/stargazers"}>
+                <AiOutlineStar />
+              </a>
+            </div>
+          ) : featured ? (
+            <div className="icons star featured">
+              {/* <a href={github + "/stargazers"}> */}
               <AiOutlineStar />
-            </a>
-          </div> : 
-          featured ? 
-          <div className="icons star featured">
-            {/* <a href={github + "/stargazers"}> */}
-              <AiOutlineStar />
-            {/* </a> */}
-          </div> : null
-          }
-         {
-          github !== "" && github !== undefined 
-          ?  <div className="icons">
-            <a href={github}>
-              <AiOutlineGithub />
-            </a>
-          </div> : null 
-          }
+              {/* </a> */}
+            </div>
+          ) : null}
+          {github !== "" && github !== undefined ? (
+            <div className="icons">
+              <a href={github}>
+                <AiOutlineGithub />
+              </a>
+            </div>
+          ) : null}
           {websiteLink !== "" && websiteLink !== undefined ? (
             <div className="icons">
               <a href={websiteLink}>
