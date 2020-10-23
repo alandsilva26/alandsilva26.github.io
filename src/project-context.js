@@ -267,6 +267,14 @@ class ProjectProvider extends React.Component {
     });
   };
 
+  getProject = (slug) => {
+    const tempProjects = [...this.state.projects];
+    const requiredProject = tempProjects.find(
+      (project) => project.slug === slug
+    );
+    return requiredProject;
+  };
+
   render() {
     return (
       <ProjectContext.Provider
@@ -275,6 +283,7 @@ class ProjectProvider extends React.Component {
           getProjectElements: this.getProjectElements,
           filterProjects: this.filterProjects,
           handleChange: this.handleChange,
+          getProject: this.getProject,
         }}
       >
         {this.props.children}

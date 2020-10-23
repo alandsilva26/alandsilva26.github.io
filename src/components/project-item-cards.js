@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineLink } from "react-icons/hi";
 
@@ -9,9 +10,13 @@ function ProjectItemCards({ project }) {
     primaryLanguage,
     github,
     websiteLink,
+    featured,
+    slug,
   } = project;
 
   let formattedDescription = shortDescription;
+
+  let starClass = featured ? "icons star featured" : "icons star";
 
   if (formattedDescription.length > 200) {
     formattedDescription = formattedDescription.slice(0, 197) + "...";
@@ -23,6 +28,7 @@ function ProjectItemCards({ project }) {
         <div className="project-item--body ">
           <h6 className="project-item--title">
             <a href={github}>{name}</a>
+            {/* <Link to={`/projects/${slug}`} >{name}</Link> */}
           </h6>
           <p>{formattedDescription}</p>
         </div>
@@ -32,17 +38,26 @@ function ProjectItemCards({ project }) {
             style={{ backgroundColor: primaryLanguage.color }}
           ></div>
           <div className="project-item--language">{primaryLanguage.name}</div>
-          <div className="icons star">
-            <a href={github + "/stargazers"}>
+          {github !== "" && github !== undefined ? (
+            <div className={starClass}>
+              <a href={github + "/stargazers"}>
+                <AiOutlineStar />
+              </a>
+            </div>
+          ) : featured ? (
+            <div className="icons star featured">
+              {/* <a href={github + "/stargazers"}> */}
               <AiOutlineStar />
-            </a>
-          </div>
-          <div className="icons">
-            <a href={github}>
-              <AiOutlineGithub />
-            </a>
-          </div>
-
+              {/* </a> */}
+            </div>
+          ) : null}
+          {github !== "" && github !== undefined ? (
+            <div className="icons">
+              <a href={github}>
+                <AiOutlineGithub />
+              </a>
+            </div>
+          ) : null}
           {websiteLink !== "" && websiteLink !== undefined ? (
             <div className="icons">
               <a href={websiteLink}>

@@ -1,8 +1,8 @@
-import Projects from "../pages/projects";
-
 import Home from "../pages/Home/home";
+import Projects from "../pages/Projects/projects";
+import SingleProject from "../pages/SingleProject/single-project";
 import About from "../pages/About/about";
-import NoMatch from "../pages/404";
+import NoMatch from "../pages/Errors/404";
 
 const routes = [
   {
@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: "/projects/:slug",
-    component: Home,
+    component: SingleProject,
   },
   {
     path: "/about",

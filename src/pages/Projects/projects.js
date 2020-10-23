@@ -1,10 +1,11 @@
 import React from "react";
-import { ProjectContext } from "../project-context";
-import Spinner from "../components/spinner";
+import { ProjectContext } from "../../project-context";
+import Spinner from "../../components/spinner";
 
 class Projects extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    console.log(this.props);
     this.state = {
       search: "",
     };
