@@ -3,7 +3,7 @@ const myData = {
   description:
     "👋 Hi I am Alan - a computer science engineer currently pursuing my bachelors degree at St. Francis Institute of Technology. I code for fun and professional reasons. I create software for android and web platforms. In my free time I like to play videogames🎮. Occasionally I watch anime.",
   avatarUrl:
-    "https://media-exp1.licdn.com/dms/image/C4D03AQFmXkNuL7-Skg/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=Qdub0A-O4tvICh4siTvCSTwujfUzZZZUFKIcHSFAc2M",
+    "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/alan.jpg?alt=media&token=9deb4003-91df-4250-88ae-b2c326b4652c",
   location: "Maharashtra, India",
   github: "alandsilva26",
   linkedin: "https://www.linkedin.com/in/alan-dsilva-289b77170/",
