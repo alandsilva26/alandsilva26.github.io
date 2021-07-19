@@ -56,7 +56,7 @@ class HomePageHeader extends React.Component {
             <div className="col-md-6 primary-purple">
               <div>Hi my name is</div>
               <h1>Alan Dsilva</h1>
-              <p className="pt-1">I am an aspiring Computer Engineer.</p>
+              <p className="pt-1">I am an aspiring Software Developer.</p>
             </div>
           </div>
         </div>

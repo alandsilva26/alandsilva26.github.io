@@ -18,7 +18,9 @@ class FeaturedProjects extends React.Component {
         <div className="container">
           <div className="row heading-row justify-content-between">
             <div className="col-xs">
-              <div className="text-left featured-projects--cell">Featured</div>
+              <div className="text-left featured-projects--cell">
+                All Projects
+              </div>
             </div>
             <div className="col-xs">
               <div className="text-right featured-projects--cell">
