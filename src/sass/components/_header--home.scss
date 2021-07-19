@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-shadow: 0 1px 1px $light-purple-shadow, 0 2px 2px $light-purple-shadow,
+    0 4px 4px $light-purple-shadow, 0 8px 8px $light-purple-shadow,
+    0 16px 16px $light-purple-shadow, 0 32px 64px $light-purple-shadow;
 
   .primary-purple {
     color: $primary-purple;
@@ -21,7 +24,7 @@
     text-align: center;
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 

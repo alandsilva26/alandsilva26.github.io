@@ -19,7 +19,6 @@ const myData = {
         "Java",
         "Python",
         "JavaScript",
-        "ECMAScript",
         "HTML",
         "CSS",
         "Dart",
@@ -33,28 +32,33 @@ const myData = {
     },
     {
       name: "Frameworks",
-      content: ["React", "Flutter", "Django", "Bootstrap"],
+      content: [
+        "ReactJs",
+        "Flutter",
+        "Django",
+        "Django Rest Framework",
+        "Eclipse Ditto",
+        "Bootstrap",
+        "Material-UI",
+      ],
     },
     {
       name: "Libraries",
-      content: ["Jquery", "D3.js", "JavaFX"],
+      content: ["Jquery", "Apache Echarts", "JavaFX"],
     },
-    {
-      name: "Software",
-      content: ["git", "npm"],
-    },
+
     {
       name: "Technologies",
       content: [
         "Github",
         "Github Actions",
         "Firebase",
-        "TravisCI",
+        "netlify",
         "Heroku",
         "Github Pages",
       ],
     },
-    { name: "Tools", content: ["XAMPP", "Android Studio", "ngrok", "gcc"] },
+    { name: "Tools", content: ["Git", "XAMPP", "Android Studio", "ngrok"] },
   ],
 };
 
