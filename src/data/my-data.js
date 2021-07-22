@@ -37,14 +37,13 @@ const myData = {
         "Flutter",
         "Django",
         "Django Rest Framework",
-        "Eclipse Ditto",
         "Bootstrap",
         "Material-UI",
       ],
     },
     {
       name: "Libraries",
-      content: ["Jquery", "Apache Echarts", "JavaFX"],
+      content: ["Jquery", "JavaFX"],
     },
 
     {
