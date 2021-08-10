@@ -92,32 +92,32 @@ class ProjectProvider extends React.Component {
         });
     }
 
-    this.steamApi().then((response) => {
-      if (response === null || response === undefined) {
-        return;
-      }
-      this.setState({
-        steamProfile: { ...response[0] },
-      });
-    });
+    // this.steamApi().then((response) => {
+    //   if (response === null || response === undefined) {
+    //     return;
+    //   }
+    //   this.setState({
+    //     steamProfile: { ...response[0] },
+    //   });
+    // });
   }
 
-  steamApi() {
-    const url =
-      "https://cors-anywhere.herokuapp.com/" +
-      `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.REACT_APP_STEAM_API_KEY}&steamids=${process.env.REACT_APP_STEAM_ID}`;
-    const steamResponse = fetch(url, {
-      mode: "cors",
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then(({ response }) => response.players)
-      .catch((error) => {
-        console.log(error);
-      });
+  // steamApi() {
+  //   const url =
+  //     "https://cors-anywhere.herokuapp.com/" +
+  //     `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.REACT_APP_STEAM_API_KEY}&steamids=${process.env.REACT_APP_STEAM_ID}`;
+  //   const steamResponse = fetch(url, {
+  //     mode: "cors",
+  //     method: "GET",
+  //   })
+  //     .then((response) => response.json())
+  //     .then(({ response }) => response.players)
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
 
-    return steamResponse;
-  }
+  //   return steamResponse;
+  // }
 
   getProjectElements(projects) {
     const projectElementList = projects.map((project, index) => {
