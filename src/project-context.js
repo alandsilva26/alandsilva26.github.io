@@ -1,8 +1,8 @@
 import React from "react";
-// import firebase from "firebase";
 import { db } from "./config/utils";
 import ProjectItemCards from "./components/project-item-cards";
 import axios from "axios";
+import { location } from "react-router-dom";
 
 const ProjectContext = React.createContext();
 
@@ -62,10 +62,19 @@ class ProjectProvider extends React.Component {
     const pickedColor = colors[Math.floor(Math.random() * colors.length)];
     var date = new Date().toLocaleString();
 
+    let content = "<@471707605476179969> Someone visited your website";
+
+    let query = new URLSearchParams(window.location.search);
+    // console.log(query);
+
+    if (query.get("refer")) {
+      content = content + ` from ${query.get("refer")}`;
+    }
+
     const article = {
       username: "Website bot",
       avatar_url: "https://i.imgur.com/4M34hi2.png",
-      content: "<@471707605476179969> Someone visited your website",
+      content: content,
       embeds: [
         {
           title: `${date}`,
