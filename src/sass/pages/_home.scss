@@ -64,6 +64,7 @@ $BORDER_RADIUS: 1em;
     left: 0;
     right: 0;
     bottom: -20%;
+    // filter: drop-shadow(5px -15px 5px red);
   }
 
   @media (max-width: $breakpoint-mobile) {
