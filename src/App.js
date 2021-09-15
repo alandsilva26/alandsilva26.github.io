@@ -20,7 +20,6 @@ function App() {
         <ScrollToTop />
         <Header />
         <Switch>{routeElements}</Switch>
-        {/* <Dismissable /> */}
         <Footer routes={routes} />
       </Router>
     </ProjectProvider>

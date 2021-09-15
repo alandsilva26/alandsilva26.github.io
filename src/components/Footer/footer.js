@@ -16,20 +16,8 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Road vector created by upklyak - www.freepik.com
+                  Road vector created by upklyak - freepik.com
                 </a>
-              </li>
-              <li className="list-group-item">
-                <span>
-                  Photo by{" "}
-                  <a href="https://unsplash.com/@otenteko?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-                    Anas Alshanti
-                  </a>{" "}
-                  on{" "}
-                  <a href="https://unsplash.com/collections/9706238/gaming?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
-                    Unsplash
-                  </a>
-                </span>
               </li>
             </ul>
           </div>
