@@ -6,6 +6,8 @@ import App from "./App";
 import "bootstrap";
 import "./sass/main.scss";
 
+console.log("********", React.version);
+
 // import "./utils";
 
 // import * as firebase from "firebase/app";

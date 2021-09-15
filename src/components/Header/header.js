@@ -4,31 +4,6 @@ import { Route, Switch, withRouter } from "react-router-dom";
 
 import Navbar from "../Navbar/navbar";
 class Header extends React.Component {
-  // console.log(this.props);
-  // console.log(history.location)
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     headerClass: "",
-  //   };
-  // }
-
-  // componentDidMount() {
-  //   const homeClass = this.props.location.pathname === "/" ? "on-home" : "";
-  //   console.log("mount");
-  //   this.setState({
-  //     headerClass: homeClass,
-  //   });
-  // }
-
-  // componentDidUpdate() {
-  //   const homeClass = this.props.location.pathname === "/" ? "on-home" : "";
-  //   console.log("update");
-  //   this.setState({
-  //     headerClass: homeClass,
-  //   });
-  // }
-
   render() {
     return (
       <header>
