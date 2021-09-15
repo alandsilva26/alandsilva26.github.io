@@ -1,12 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Dismissable from "./components/dismissable";
 import { ProjectProvider } from "./project-context";
-import routes from "./data/routes";
+import routes from "./config/routes";
 import ScrollToTop from "./config/scroll-to-top";
 
 //common
-import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
     <ProjectProvider>
       <Router>
         <ScrollToTop />
-        <Header />
+
         <Switch>{routeElements}</Switch>
         <Footer routes={routes} />
       </Router>

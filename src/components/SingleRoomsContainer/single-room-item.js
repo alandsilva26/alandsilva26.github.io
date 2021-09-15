@@ -1,15 +1,7 @@
 import React from "react";
 
 function SingleRoomItem({ project }) {
-  const {
-    name,
-    shortDescription,
-    description,
-    github,
-    websiteLink,
-    tags,
-    images,
-  } = project;
+  const { name, shortDescription, description, images } = project;
 
   let shownDescription = shortDescription;
 
@@ -35,7 +27,7 @@ function SingleRoomItem({ project }) {
             {images.map((image, index) => {
               return (
                 <div className="col-md-6 col-sm-12">
-                  <img key={index} src={image} />
+                  <img key={index} src={image} alt={index} />
                 </div>
               );
             })}

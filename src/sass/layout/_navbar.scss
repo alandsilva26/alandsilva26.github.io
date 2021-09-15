@@ -7,6 +7,10 @@
 
   @media screen and (max-width: $breakpoint-mobile) {
     padding-left: 30px !important;
+
+    .brand-image {
+      display: none;
+    }
   }
 }
 

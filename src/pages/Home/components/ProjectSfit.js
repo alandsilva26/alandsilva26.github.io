@@ -1,6 +1,6 @@
 import React from "react";
 
-import final from "../../images/sfit-app/final.png";
+import final from "images/sfit-app/final.png";
 
 export default function ProjectSfit() {
   return (
@@ -15,7 +15,7 @@ export default function ProjectSfit() {
             </p>
             <h2 className="project__title">SFIT Android App</h2>
             <hr />
-            <p className="project__description">
+            <div className="project__description">
               <b>App features</b>
               <ul>
                 <li>Track attendance</li>
@@ -25,7 +25,7 @@ export default function ProjectSfit() {
                 <li>View and answer polls directly through app</li>
                 <li>Allows sign in for Parents, Teachers and Students.</li>
               </ul>
-            </p>
+            </div>
             <PlayStoreButton />
           </div>
           <div className="col col-12 col-sm-12 col-md-6 col__right">

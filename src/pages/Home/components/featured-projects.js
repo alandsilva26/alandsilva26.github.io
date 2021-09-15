@@ -1,6 +1,6 @@
 import React from "react";
-import { ProjectContext } from "../../project-context";
-import Spinner from "../../components/spinner";
+import { ProjectContext } from "project-context.js";
+import Spinner from "components/spinner";
 import { Link } from "react-router-dom";
 // import projectBackground from "../../images/projects-2.png";
 

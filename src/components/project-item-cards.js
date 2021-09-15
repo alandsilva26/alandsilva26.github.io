@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineLink } from "react-icons/hi";
 
@@ -11,7 +10,6 @@ function ProjectItemCards({ project }) {
     github,
     websiteLink,
     featured,
-    slug,
   } = project;
 
   let formattedDescription = shortDescription;

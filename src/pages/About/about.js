@@ -6,6 +6,7 @@ import myData from "../../data/my-data";
 import SocialLinks from "./social-links";
 import PersonalData from "./personal-data";
 import Technical from "./technical";
+import AboutPageHeader from "./AboutPageHeader";
 
 class About extends React.Component {
   static contextType = ProjectContext;
@@ -15,11 +16,14 @@ class About extends React.Component {
     const { steamProfile } = this.context;
 
     return (
-      <div className="about">
-        <div className="container py-5">
-          {loading ? <Spinner /> : <Profile steam={steamProfile} />}
+      <>
+        <AboutPageHeader />
+        <div className="about">
+          <div className="container py-5">
+            {loading ? <Spinner /> : <Profile steam={steamProfile} />}
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }

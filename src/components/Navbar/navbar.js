@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavbarItem from "./navbar-item";
-import routes from "../../data/routes";
+import routes from "../../config/routes";
 import { HiMenu } from "react-icons/hi";
 
 //assets
@@ -16,7 +16,8 @@ function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-sm">
       <Link to="/" className="navbar-brand pl-5">
-        <img src={logo} alt="website logo" /> &nbsp;Alan Dsilva
+        <img className="brand-image" src={logo} alt="website logo" /> &nbsp;Alan
+        Dsilva
       </Link>
       <button
         className="navbar-toggler"

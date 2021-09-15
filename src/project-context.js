@@ -2,7 +2,6 @@ import React from "react";
 import { db } from "./config/utils";
 import ProjectItemCards from "./components/project-item-cards";
 import axios from "axios";
-import { location } from "react-router-dom";
 
 const ProjectContext = React.createContext();
 
@@ -150,12 +149,9 @@ class ProjectProvider extends React.Component {
     let { name, description, language, tag } = this.state;
 
     if (name !== "") {
-      filteredProjects = filteredProjects.filter((item) => {
-        if (item.name.toLowerCase().includes(name)) {
-          console.log("HERE");
-          return item;
-        }
-      });
+      filteredProjects = filteredProjects.filter((item) =>
+        item.name.toLowerCase().includes(name)
+      );
     }
 
     if (description !== "") {
@@ -164,6 +160,8 @@ class ProjectProvider extends React.Component {
           return item;
         } else if (item.description.toLowerCase().includes(description)) {
           return item;
+        } else {
+          return null;
         }
       });
     }
@@ -180,6 +178,7 @@ class ProjectProvider extends React.Component {
         if (containsTag) {
           return item;
         }
+        return null;
       });
     }
 
@@ -200,9 +199,12 @@ class ProjectProvider extends React.Component {
             containsLanguage = true;
           }
         }
+
         if (containsLanguage) {
           return item;
         }
+
+        return null;
       });
     }
 

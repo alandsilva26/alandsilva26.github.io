@@ -1,5 +1,5 @@
 import React from "react";
-import myData from "../data/my-data";
+import myData from "data/my-data";
 
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
