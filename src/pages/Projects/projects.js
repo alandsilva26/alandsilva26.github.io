@@ -1,6 +1,7 @@
 import React from "react";
-import { ProjectContext } from "../../project-context";
-import Spinner from "../../components/spinner";
+import { ProjectContext } from "../../context/project-context";
+import Spinner from "../../components/Spinner.tsx";
+import ProjectsHeader from "./Header";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -12,10 +13,6 @@ class Projects extends React.Component {
   }
 
   static contextType = ProjectContext;
-
-  // filter = (event) => {
-  //   console.log(event.target.value);
-  // };
 
   render() {
     const {
@@ -30,71 +27,74 @@ class Projects extends React.Component {
     } = this.context;
 
     return (
-      <section className="projects--main">
-        <div className="bumps">
-          <div className="left-bump" />
-          <div className="right-bump" />
-        </div>
-        <div className="projects--background-image"></div>
-        <div className="background-color" />
-        <div className="container">
-          <div
-            className={loading ? "projects--form disabled" : "projects--form"}
-          >
-            <div className="active-cyan-4">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Name"
-                aria-label="Search"
-                name="name"
-                onChange={handleChange}
-                value={name}
-                disabled={loading ? true : false}
-              />
+      <>
+        <ProjectsHeader />
+        <section className="projects--main">
+          <div className="bumps">
+            <div className="left-bump" />
+            <div className="right-bump" />
+          </div>
+          <div className="projects--background-image"></div>
+          <div className="background-color" />
+          <div className="container">
+            <div
+              className={loading ? "projects--form disabled" : "projects--form"}
+            >
+              <div className="active-cyan-4">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Name"
+                  aria-label="Search"
+                  name="name"
+                  onChange={handleChange}
+                  value={name}
+                  disabled={loading ? true : false}
+                />
+              </div>
+              <div className="active-cyan-4">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Description"
+                  aria-label="Search"
+                  name="description"
+                  onChange={handleChange}
+                  value={description}
+                  disabled={loading ? true : false}
+                />
+              </div>
+              <div className="active-cyan-4">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Tag"
+                  aria-label="Search"
+                  name="tag"
+                  onChange={handleChange}
+                  value={tag}
+                  disabled={loading ? true : false}
+                />
+              </div>
+              <div className="active-cyan-4">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Language"
+                  aria-label="Search"
+                  name="language"
+                  onChange={handleChange}
+                  value={language}
+                  disabled={loading ? true : false}
+                />
+              </div>
             </div>
-            <div className="active-cyan-4">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Description"
-                aria-label="Search"
-                name="description"
-                onChange={handleChange}
-                value={description}
-                disabled={loading ? true : false}
-              />
-            </div>
-            <div className="active-cyan-4">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Tag"
-                aria-label="Search"
-                name="tag"
-                onChange={handleChange}
-                value={tag}
-                disabled={loading ? true : false}
-              />
-            </div>
-            <div className="active-cyan-4">
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Language"
-                aria-label="Search"
-                name="language"
-                onChange={handleChange}
-                value={language}
-                disabled={loading ? true : false}
-              />
+            <div className="row py-5">
+              {loading ? <Spinner /> : getProjectElements(filteredProjects)}
             </div>
           </div>
-          <div className="row py-5">
-            {loading ? <Spinner /> : getProjectElements(filteredProjects)}
-          </div>
-        </div>
-      </section>
+        </section>
+      </>
     );
   }
 }
