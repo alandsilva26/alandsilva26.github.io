@@ -1,6 +1,6 @@
 import React from "react";
 
-function Spinner() {
+const Spinner = (): JSX.Element => {
   return (
     <div className="spinner--wrapper">
       <svg
@@ -22,6 +22,6 @@ function Spinner() {
       </svg>
     </div>
   );
-}
+};
 
 export default Spinner;

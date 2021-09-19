@@ -5,14 +5,15 @@ import routes from "../../config/routes";
 import { HiMenu } from "react-icons/hi";
 
 //assets
-import logo from "../../images/favicon-32x32.png";
+const logo = require("../../images/favicon-32x32.png");
 
-function Navbar(props) {
+const Navbar = (): JSX.Element => {
   const navbarItems = routes.map((route, index) => {
     return route.name != null ? (
       <NavbarItem key={index} route={route.path} name={route.name} />
     ) : null;
   });
+
   return (
     <nav className="navbar navbar-expand-sm">
       <Link to="/" className="navbar-brand pl-5">
@@ -37,6 +38,6 @@ function Navbar(props) {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

@@ -1,6 +1,6 @@
 import React from "react";
-import { db } from "./config/utils";
-import ProjectItemCards from "./components/project-item-cards";
+import { db } from "../config/firebaseConfig";
+import ProjectItemCards from "../components/ProjectItemCards";
 import axios from "axios";
 
 const ProjectContext = React.createContext();

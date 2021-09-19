@@ -1,8 +1,7 @@
 import React from "react";
+import myData from "../../../data/my-data";
 
-import myData from "../../data/my-data";
-
-function Technical() {
+const Technical = (): JSX.Element => {
   const { technical } = myData;
 
   console.log(technical);
@@ -56,6 +55,6 @@ function Technical() {
       {dataList}
     </div>
   );
-}
+};
 
 export default Technical;

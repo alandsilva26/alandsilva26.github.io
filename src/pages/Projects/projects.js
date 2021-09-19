@@ -1,6 +1,6 @@
 import React from "react";
-import { ProjectContext } from "../../project-context";
-import Spinner from "../../components/spinner";
+import { ProjectContext } from "../../context/project-context";
+import Spinner from "../../components/Spinner.tsx";
 import ProjectsHeader from "./Header";
 
 class Projects extends React.Component {

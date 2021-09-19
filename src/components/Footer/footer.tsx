@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import myData from "../../data/my-data";
 
-function Footer() {
+const Footer = (): JSX.Element => {
   return (
     <footer className="page-footer font-small blue pt-4">
       <div className="container">
@@ -81,6 +81,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

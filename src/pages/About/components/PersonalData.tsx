@@ -5,18 +5,18 @@ import { MdLocationOn } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiBuildingHouse } from "react-icons/bi";
 
-import myData from "../../data/my-data";
+import myData from "../../../data/my-data";
 
-function PersonalData(props) {
+function PersonalData({ game }: { game: string }) {
   const { email } = myData;
   return (
     <div className="col-8 col-md-6">
       <h4>{myData.name}</h4>
       <ul className="list-group personal-data">
-        {props.game && (
+        {game && (
           <ListItemPersonalData
             extra="game"
-            content={"Playing " + props.game}
+            content={"Playing " + game}
           ></ListItemPersonalData>
         )}
         <ListItemPersonalData content={myData.location}>
@@ -36,8 +36,21 @@ function PersonalData(props) {
   );
 }
 
-function ListItemPersonalData({ children, content, extra, link }) {
+interface ListItemProps {
+  children?: JSX.Element;
+  content?: string;
+  extra?: string;
+  link?: string;
+}
+
+function ListItemPersonalData({
+  children,
+  content,
+  extra,
+  link,
+}: ListItemProps) {
   const classAppend = extra !== undefined ? extra : "";
+
   return (
     <li className="list-group-item ">
       <h6 className="cell-group">

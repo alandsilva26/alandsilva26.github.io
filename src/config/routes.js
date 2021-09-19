@@ -1,7 +1,7 @@
 import HomePage from "../pages/Home/HomePage";
 import Projects from "../pages/Projects/projects";
-import SingleProject from "../pages/SingleProject/single-project";
-import About from "../pages/About/about";
+// import SingleProject from "../pages/SingleProject/single-project";
+import AboutPage from "../pages/About/AboutPage";
 import TestPage from "../pages/TestPage";
 import NoMatch from "../pages/Errors/404";
 
@@ -17,13 +17,9 @@ const routes = [
     component: Projects,
   },
   {
-    path: "/projects/:slug",
-    component: SingleProject,
-  },
-  {
     path: "/about",
     name: "About",
-    component: About,
+    component: AboutPage,
   },
   {
     path: "/testpage",

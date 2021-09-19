@@ -1,26 +1,25 @@
 import React from "react";
-import Spinner from "../../components/spinner";
-import { ProjectContext } from "../../project-context";
+import { ProjectContext } from "../../context/project-context";
 import myData from "../../data/my-data";
+import Navbar from "../../components/Navbar/Navbar";
+import SocialLinks from "./components/SocialLinks";
+import PersonalData from "./components/PersonalData";
+import Technical from "./components/Technical";
 
-import SocialLinks from "./social-links";
-import PersonalData from "./personal-data";
-import Technical from "./technical";
-import AboutPageHeader from "./AboutPageHeader";
-
-class About extends React.Component {
+class AboutPage extends React.Component {
   static contextType = ProjectContext;
 
   render() {
-    const loading = false;
     const { steamProfile } = this.context;
 
     return (
       <>
-        <AboutPageHeader />
+        <header>
+          <Navbar />
+        </header>
         <div className="about">
           <div className="container py-5">
-            {loading ? <Spinner /> : <Profile steam={steamProfile} />}
+            <Profile steam={steamProfile} />
           </div>
         </div>
       </>
@@ -28,7 +27,14 @@ class About extends React.Component {
   }
 }
 
-function Profile({ steam }) {
+interface ISteam {
+  steam: {
+    gameid?: string | undefined;
+    gameextrainfo: string;
+  };
+}
+
+function Profile({ steam }: ISteam) {
   return (
     <>
       {/* row 1 begins */}
@@ -37,8 +43,9 @@ function Profile({ steam }) {
         <div className="avatar-group col-4 col-md-2">
           <div className="avatar">
             <img
-              className={steam.gameid !== undefined && "ingame"}
-              src={myData.avatarUrl}
+              className={steam.gameid && "ingame"}
+              // src={myData.avatarUrl}
+              src="./media/alan.jpg"
               alt="Alan Dsilva"
             />
           </div>
@@ -63,4 +70,4 @@ function Profile({ steam }) {
   );
 }
 
-export default About;
+export default AboutPage;

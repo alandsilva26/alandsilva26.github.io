@@ -4,7 +4,7 @@ import { SiCodechef, SiHackerrank } from "react-icons/si";
 import { FaSteam } from "react-icons/fa";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-import myData from "../../data/my-data";
+import myData from "../../../data/my-data";
 
 function SocialLinks() {
   const { github, linkedin, codechef, hackerrank, steam } = myData;
@@ -53,7 +53,19 @@ function SocialLinks() {
   );
 }
 
-function ListItemSocialData({ prefixUrl, postfixUrl, children, content }) {
+interface ListItemProps {
+  prefixUrl: string;
+  postfixUrl: string;
+  children: JSX.Element;
+  content: string;
+}
+
+function ListItemSocialData({
+  prefixUrl,
+  postfixUrl,
+  children,
+  content,
+}: ListItemProps) {
   return (
     <li className="list-group-item">
       <a className="cell-group" href={prefixUrl + postfixUrl}>

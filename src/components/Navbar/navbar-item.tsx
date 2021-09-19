@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function NavbarItem({ route, name }) {
+interface IProps {
+  route: string;
+  name: string;
+}
+
+const NavbarItem = ({ route, name }: IProps): JSX.Element => {
   return (
     <li className="nav-item">
       <Link to={route} className="nav-link">
@@ -9,6 +14,6 @@ function NavbarItem({ route, name }) {
       </Link>
     </li>
   );
-}
+};
 
 export default NavbarItem;

@@ -2,7 +2,23 @@ import React from "react";
 import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineLink } from "react-icons/hi";
 
-function ProjectItemCards({ project }) {
+export interface Project {
+  name: string;
+  shortDescription: string;
+  primaryLanguage: {
+    name: string;
+    color: string;
+  };
+  github: string;
+  websiteLink: string;
+  featured: boolean;
+}
+
+interface IProps {
+  project: Project;
+}
+
+function ProjectItemCards({ project }: IProps): JSX.Element {
   const {
     name,
     shortDescription,

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Navbar from "components/Navbar/navbar";
+import Navbar from "../../../components/Navbar/Navbar";
 import SocialChips from "./social-chips";
 
 function HomeHeader() {
@@ -38,9 +38,9 @@ function HomeHeader() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 primary-purple">
-              <div>Hi my name is</div>
+              <div>Hello, I'm </div>
               <h1>Alan Dsilva</h1>
-              <p className="pt-1">I am an aspiring Software Developer.</p>
+              <p className="pt-1">an aspiring Software Developer.</p>
             </div>
           </div>
         </div>
