@@ -1,0 +1,36 @@
+// imports
+@import "~bootstrap/scss/bootstrap";
+
+//abstracts
+@import "abstracts/variables";
+
+//base
+@import "base/reset";
+
+//layout
+@import "layout/navbar";
+@import "layout/footer";
+
+//vendors
+@import "vendors/bootstrap";
+@import "vendors/spinner";
+
+//pages
+@import "pages/home";
+@import "pages/projects";
+@import "pages/about";
+@import "pages/notfound";
+
+//components
+@import "components/header";
+@import "components/project-item";
+@import "components/home--info-overview";
+
+#single-project {
+  .gallery {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
