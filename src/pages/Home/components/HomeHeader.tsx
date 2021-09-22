@@ -2,14 +2,18 @@ import React, { useRef } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import SocialChips from "./social-chips";
 
-function HomeHeader() {
-  const headerRef = useRef();
+const HomeHeader = (): JSX.Element => {
+  const headerRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
-    if (headerRef) {
+    if (headerRef.current) {
       try {
         const offset = window.pageYOffset;
-        const base = headerRef.current.children;
+
+        const base = headerRef.current.children as HTMLCollectionOf<
+          HTMLElement
+        >;
+
         base[0].style.backgroundPositionY = offset * 0.2 + "px";
         base[1].style.backgroundPositionX = offset * 0.05 + "px";
 
@@ -19,6 +23,8 @@ function HomeHeader() {
         base[2].style.backgroundPositionX = -offset * 0.03 + "px";
 
         base[3].style.backgroundPositionY = offset * 0.3 + "px";
+
+        console.log(base);
       } catch (e) {
         console.warn("Tet");
       }
@@ -48,6 +54,6 @@ function HomeHeader() {
       </div>
     </header>
   );
-}
+};
 
 export default HomeHeader;

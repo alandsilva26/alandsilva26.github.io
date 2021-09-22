@@ -3,7 +3,7 @@ import FeaturedProjects from "./components/featured-projects.js";
 import ProjectSfit from "./components/ProjectSfit";
 import HomeHeader from "./components/HomeHeader";
 
-function HomePage() {
+const HomePage = (): JSX.Element => {
   return (
     <>
       <HomeHeader />
@@ -18,6 +18,6 @@ function HomePage() {
       </div>
     </>
   );
-}
+};
 
 export default HomePage;
