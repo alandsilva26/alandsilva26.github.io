@@ -5,8 +5,6 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 
 function SocialChips() {
-  // As this data is going to be static throughout I did not use firebase to retrieve my social data and instead used local data files
-
   const { github, linkedin, email } = myData;
 
   return (

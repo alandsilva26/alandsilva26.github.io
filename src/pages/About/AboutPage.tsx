@@ -14,7 +14,7 @@ class AboutPage extends React.Component {
 
     return (
       <>
-        <header>
+        <header className="about-header">
           <Navbar />
         </header>
         <div className="about">

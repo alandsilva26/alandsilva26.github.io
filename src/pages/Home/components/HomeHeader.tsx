@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "../../../components/Navbar/Navbar";
-import SocialChips from "./social-chips";
+import SocialChips from "./SocialChips";
 
 const HomeHeader = (): JSX.Element => {
   const headerRef = useRef<HTMLDivElement>(null);

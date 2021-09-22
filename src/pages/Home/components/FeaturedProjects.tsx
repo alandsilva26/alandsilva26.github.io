@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ProjectContext } from "../../../context/project-context";
 import Spinner from "../../../components/Spinner";
-import { Link } from "react-router-dom";
 
 // import projectBackground from "../../images/projects-2.png";
 
