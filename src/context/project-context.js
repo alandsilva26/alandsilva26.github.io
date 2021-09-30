@@ -83,7 +83,7 @@ class ProjectProvider extends React.Component {
       ],
     };
 
-    if (!window.location.href.includes("localhost:3000")) {
+    if (process.env.REACT_APP_MODE === "production") {
       axios
         .post(process.env.REACT_APP_WEBHOOK_URL, article)
         .then((response) => {

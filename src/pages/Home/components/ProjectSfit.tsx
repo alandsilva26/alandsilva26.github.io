@@ -1,5 +1,4 @@
 import React from "react";
-
 import final from "../../../images/sfit-app/final.png";
 
 export default function ProjectSfit() {

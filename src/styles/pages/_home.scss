@@ -1,6 +1,35 @@
 @import "featured-projects";
 @import "skills-overview";
 
+.home__about {
+  &--images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    img {
+      max-width: 100px;
+      // max-height: 500px;
+    }
+
+    &-1 {
+      background: red;
+      border: 1px solid red;
+      grid-area: 2 / 1 / 4 / 3;
+    }
+
+    &-2 {
+      grid-area: 1 / 4 / 3 / 6;
+    }
+
+    &-3 {
+      grid-area: 3 / 3 / 7 / 5;
+    }
+  }
+}
+
 $BORDER_RADIUS: 1em;
 
 .project__sfit-app {
