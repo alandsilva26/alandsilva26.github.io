@@ -5,13 +5,18 @@ import { HiOutlineLink } from "react-icons/hi";
 export interface Project {
   name: string;
   shortDescription: string;
+  description?: string;
+  github?: string;
+  slug?: string;
+  featured: boolean;
+  websiteLink?: string;
+  images?: string[];
+  tags: string[];
   primaryLanguage: {
     name: string;
-    color: string;
+    color?: string;
   };
-  github: string;
-  websiteLink: string;
-  featured: boolean;
+  languages: string[];
 }
 
 interface IProps {
