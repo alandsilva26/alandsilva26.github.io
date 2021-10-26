@@ -1,6 +1,5 @@
 import HomePage from "../pages/Home/HomePage";
 import Projects from "../pages/Projects/projects";
-// import SingleProject from "../pages/SingleProject/single-project";
 import AboutPage from "../pages/About/AboutPage";
 import TestPage from "../pages/TestPage";
 import NoMatch from "../pages/Errors/404";

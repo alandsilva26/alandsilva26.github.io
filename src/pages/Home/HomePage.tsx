@@ -2,11 +2,13 @@ import React from "react";
 import FeaturedProjects from "./components/FeaturedProjects";
 import ProjectSfit from "./components/ProjectSfit";
 import HomeHeader from "./components/HomeHeader";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 const HomePage = (): JSX.Element => {
   return (
     <>
       <HomeHeader />
+      <ProjectShowcase />
       <div className="home__about d-none">
         <div className="container my-5">
           <div className="row">
