@@ -1,0 +1,31 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "personal website",
+  "author": "Alan Dsilva",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-image": "^2.2.0",
+    "gatsby-plugin-manifest": "^4.2.0",
+    "gatsby-plugin-sass": "^5.2.0",
+    "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-plugin-sitemap": "^5.2.0",
+    "gatsby-source-filesystem": "^4.2.0",
+    "gatsby-transformer-remark": "^5.2.0",
+    "gatsby-transformer-sharp": "^4.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.43.5"
+  }
+}
