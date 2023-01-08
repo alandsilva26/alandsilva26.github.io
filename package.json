@@ -12,25 +12,20 @@
     "react-router"
   ],
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^3.11.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.9.2",
-    "@types/react": "^17.0.21",
-    "@types/react-dom": "^17.0.9",
-    "@types/react-router-dom": "^5.1.9",
     "axios": ">=0.21.2",
     "bootstrap": "^4.5.2",
     "dotenv": "^8.2.0",
     "firebase": "^7.22.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^3.11.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
     "sass": "^1.57.1",
     "typescript": "^3.9.10"
   },
@@ -65,6 +60,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "prettier": "2.4.1",
-    "sitemap": "^6.3.2"
+    "sitemap": "^6.3.2",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.2",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.9"
   }
 }
