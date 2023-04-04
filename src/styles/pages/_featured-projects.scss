@@ -47,10 +47,10 @@
   width: $px;
   height: $px;
   top: -$px;
-  border-top: calc(#{$px/2}) solid transparent;
-  border-left: calc(#{$px/2}) solid $featuredProjectsBackground;
-  border-right: calc(#{$px/2}) solid transparent;
-  border-bottom: calc(#{$px/2}) solid $featuredProjectsBackground;
+  border-top: calc($px/2) solid transparent;
+  border-left: calc($px/2) solid $featuredProjectsBackground;
+  border-right: calc($px/2) solid transparent;
+  border-bottom: calc($px/2) solid $featuredProjectsBackground;
 }
 
 .home--featured-projects::before {

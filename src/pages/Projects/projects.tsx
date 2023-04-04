@@ -1,12 +1,17 @@
 import React from "react";
 import { ProjectContext } from "../../context/project-context";
-import Spinner from "../../components/Spinner.tsx";
+import Spinner from "../../components/Spinner";
 import ProjectsHeader from "./Header";
 
-class Projects extends React.Component {
-  constructor(props) {
+interface IProps {}
+
+interface IState {
+  search: string;
+}
+
+class Projects extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
     super(props);
-    console.log(this.props);
     this.state = {
       search: "",
     };
@@ -14,7 +19,7 @@ class Projects extends React.Component {
 
   static contextType = ProjectContext;
 
-  render() {
+  render(): JSX.Element {
     const {
       filteredProjects,
       getProjectElements,

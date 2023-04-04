@@ -1,13 +1,29 @@
-import React from "react";
-import { db } from "../config/firebaseConfig";
-import ProjectItemCards from "../components/ProjectItemCards";
+import React, { createContext } from "react";
 import axios from "axios";
+import { db } from "../config/firebaseConfig";
+import ProjectItemCards, { Project } from "../components/ProjectItemCards";
 
-const ProjectContext = React.createContext();
+const ProjectContext = createContext({});
 
-class ProjectProvider extends React.Component {
-  constructor() {
-    super();
+interface IProps {}
+
+interface IState {
+  user: {};
+  projects: Project[];
+  featuredProjects: Project[];
+  filteredProjects: Project[];
+  loading: boolean;
+  steamProfile?: {};
+  headerClass: string;
+  name: string;
+  description: string;
+  language: string;
+  tag: string;
+}
+
+class ProjectProvider extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
     this.state = {
       user: {},
       projects: [],
@@ -33,7 +49,7 @@ class ProjectProvider extends React.Component {
 
       const featuredProjects = projects
         .map(
-          (project) =>
+          (project: Project) =>
             // project.featured === true ? project : null
             project
         )
@@ -49,13 +65,7 @@ class ProjectProvider extends React.Component {
     });
 
     const colors = [
-      14753140,
-      15258703,
-      15466753,
-      16675185,
-      29913,
-      130928,
-      7999,
+      14753140, 15258703, 15466753, 16675185, 29913, 130928, 7999,
     ];
 
     const pickedColor = colors[Math.floor(Math.random() * colors.length)];
@@ -84,11 +94,13 @@ class ProjectProvider extends React.Component {
     };
 
     if (process.env.REACT_APP_MODE === "production") {
-      axios
-        .post(process.env.REACT_APP_WEBHOOK_URL, article)
-        .then((response) => {
-          console.log("Sent");
-        });
+      if (typeof process.env.REACT_APP_WEBHOOK_URL !== undefined) {
+        axios
+          .post(process.env.REACT_APP_WEBHOOK_URL!, article)
+          .then((response) => {
+            console.log("Sent");
+          });
+      }
     }
 
     // this.steamApi().then((response) => {
@@ -118,33 +130,29 @@ class ProjectProvider extends React.Component {
   //   return steamResponse;
   // }
 
-  getProjectElements(projects) {
+  getProjectElements(projects: Project[]) {
     const projectElementList = projects.map((project, index) => {
       return (
         <ProjectItemCards key={index} project={project}></ProjectItemCards>
       );
     });
+
     return projectElementList;
   }
 
-  handleChange = (event) => {
+  handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = event.target;
 
-    console.log(name, value.toLowerCase());
+    console.log(name, typeof value.toLowerCase());
 
-    this.setState(
-      {
-        [name]: value.toLowerCase(),
-      },
-      this.filterProjects
-    );
+    this.setState({
+      ...this.state,
+      [name]: value.toLowerCase(),
+    });
+    this.filterProjects();
   };
 
-  filterProjects = (event) => {
-    // let { name, value } = event.target;
-
-    // value = value.toLowerCase();
-
+  filterProjects = (): void => {
     let filteredProjects = [...this.state.projects];
     let { name, description, language, tag } = this.state;
 
@@ -158,7 +166,7 @@ class ProjectProvider extends React.Component {
       filteredProjects = filteredProjects.filter((item) => {
         if (item.shortDescription.toLowerCase().includes(description)) {
           return item;
-        } else if (item.description.toLowerCase().includes(description)) {
+        } else if (item.description?.toLowerCase().includes(description)) {
           return item;
         } else {
           return null;
@@ -207,70 +215,6 @@ class ProjectProvider extends React.Component {
         return null;
       });
     }
-
-    // switch (name) {
-    //   case "name": {
-    //     filteredProjects = filteredProjects.filter((item) => {
-    //       if (item.name.toLowerCase().includes(value)) {
-    //         return item;
-    //       }
-    //       return null;
-    //     });
-    //     break;
-    //   }
-    //   case "description": {
-    //     filteredProjects = filteredProjects.filter((item) => {
-    //       if (
-    //         item.shortDescription.toLowerCase().includes(event.target.value)
-    //       ) {
-    //         return item;
-    //       } else if (item.description.toLowerCase().includes(value)) {
-    //         return item;
-    //       }
-    //       return null;
-    //     });
-    //     break;
-    //   }
-
-    //   case "language": {
-    //     filteredProjects = filteredProjects.filter((item) => {
-    //       let containsLanguage = false;
-    //       if (item.hasOwnProperty("languages")) {
-    //         for (let i = 0; i < item.languages.length; i++) {
-    //           if (item.languages[i].toLowerCase().includes(value)) {
-    //             containsLanguage = true;
-    //             break;
-    //           }
-    //         }
-    //       }
-    //       if (containsLanguage) {
-    //         return item;
-    //       }
-    //       return null;
-    //     });
-    //     break;
-    //   }
-    //   case "tags": {
-    //     console.log("here in tags");
-    //     filteredProjects = filteredProjects.filter((item) => {
-    //       let containsTag = false;
-    //       for (let i = 0; i < item.tags.length; i++) {
-    //         if (item.tags[i].toLowerCase().includes(value)) {
-    //           containsTag = true;
-    //           break;
-    //         }
-    //       }
-    //       if (containsTag) {
-    //         return item;
-    //       }
-    //       return null;
-    //     });
-    //     break;
-    //   }
-    //   default:
-    //     console.log("Default triggerd not expected");
-    // }
-
     console.log("filtered", filteredProjects);
 
     this.setState({
@@ -278,7 +222,7 @@ class ProjectProvider extends React.Component {
     });
   };
 
-  getProject = (slug) => {
+  getProject = (slug: string): Project | undefined => {
     const tempProjects = [...this.state.projects];
     const requiredProject = tempProjects.find(
       (project) => project.slug === slug

@@ -16,7 +16,7 @@ const Navbar = (): JSX.Element => {
 
   return (
     <nav className="navbar navbar-expand-sm">
-      <Link to="/" className="navbar-brand pl-5">
+      <Link to="/" className="navbar-brand ps-5">
         <img className="brand-image" src={logo} alt="website logo" /> &nbsp;Alan
         Dsilva
       </Link>
@@ -34,7 +34,7 @@ const Navbar = (): JSX.Element => {
         <span className="navbar-toggler-icon"></span> */}
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto pr-5">{navbarItems}</ul>
+        <ul className="navbar-nav ms-auto pe-5">{navbarItems}</ul>
       </div>
     </nav>
   );

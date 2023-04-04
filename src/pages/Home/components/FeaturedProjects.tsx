@@ -18,13 +18,13 @@ class FeaturedProjects extends React.Component {
         <div className="background-color" />
         <div className="container">
           <div className="row heading-row justify-content-between">
-            <div className="col-xs">
-              <div className="text-left featured-projects--cell">
+            <div className="col">
+              <div className="text-start featured-projects--cell">
                 All Projects
               </div>
             </div>
-            <div className="col-xs">
-              <div className="text-right featured-projects--cell">
+            <div className="col">
+              <div className="text-end featured-projects--cell">
                 <Link to="projects">View all</Link>
               </div>
             </div>
