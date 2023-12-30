@@ -4,3 +4,6 @@ other
 node_modules
 media
 build
+/dist
+/coverage
+/.nx/cache

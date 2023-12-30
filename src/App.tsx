@@ -1,6 +1,5 @@
-import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import ScrollToTop from "./config/scroll-to-top";
+// import ScrollToTop from "./config/scroll-to-top";
 import RouterConfig from "./navigation/RouterConfig";
 import { ProjectProvider } from "./context/project-context";
 
@@ -11,7 +10,7 @@ function App() {
   return (
     <ProjectProvider>
       <Router>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <RouterConfig />
         <Footer />
       </Router>

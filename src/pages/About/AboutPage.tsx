@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
   static contextType = ProjectContext;
 
   render() {
-    const { steamProfile } = this.context;
+    const { steamProfile } = this.context as any;
 
     return (
       <>
@@ -45,7 +45,7 @@ function Profile({ steam }: ISteam) {
             <img
               className={steam.gameid && "ingame"}
               // src={myData.avatarUrl}
-              src="./media/alan.jpg"
+              src="src/images/alan.jpg"
               alt="Alan Dsilva"
             />
           </div>

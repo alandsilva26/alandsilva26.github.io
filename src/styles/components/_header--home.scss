@@ -75,21 +75,22 @@
   }
 
   .header--home-overlay:nth-child(1) {
-    background-image: url("../../images/base1.svg");
+    background-image: url("src/images/base1.svg");
+    z-index: -3;
   }
 
   .header--home-overlay:nth-child(2) {
-    background-image: url("../../images/base2.svg");
+    background-image: url("src/images/base2.svg");
     z-index: -3;
   }
 
   .header--home-overlay:nth-child(3) {
-    background-image: url("../../images/base3.svg");
+    background-image: url("src/images/base3.svg");
     z-index: -2;
   }
 
   .header--home-overlay:nth-child(4) {
-    background-image: url("../../images/base4.svg");
+    background-image: url("src/images/base4.svg");
     z-index: -1;
   }
 }
@@ -110,22 +111,22 @@
   }
 
   .header--home-overlay:nth-child(1) {
-    background-image: url("../../images/base1.svg");
+    background-image: url("src/images/base1.svg");
   }
 
   .header--home-overlay:nth-child(2) {
     background-color: $primary-pink;
-    background-image: url("../../images/base2.svg");
+    background-image: url("src/images/base2.svg");
     z-index: -3;
   }
 
   .header--home-overlay:nth-child(3) {
-    background-image: url("../../images/base3.svg");
+    background-image: url("src/images/base3.svg");
     z-index: -2;
   }
 
   .header--home-overlay:nth-child(4) {
-    background-image: url("../../images/base4.svg");
+    background-image: url("src/images/base4.svg");
     z-index: -1;
   }
 }

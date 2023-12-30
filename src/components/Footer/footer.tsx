@@ -21,7 +21,7 @@ const Footer = (): JSX.Element => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-2">
             <ul className="list-group">
               <span className="title">Navigation</span>
               <li className="list-group-item">
@@ -35,22 +35,22 @@ const Footer = (): JSX.Element => {
               </li>
             </ul>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-6">
             <ul className="list-group">
               <span className="title">Connect with me</span>
-              <li className="list-group-item">
+              <li className="list-group-item text-light">
                 Github -{" "}
                 <a href="https://github.com/alandsilva26/">
                   https://github.com/alandsilva26
                 </a>
               </li>
-              <li className="list-group-item">
+              <li className="list-group-item text-light">
                 Linkedin -{" "}
                 <a href="https://www.linkedin.com/in/alan-dsilva-289b77170/">
                   https://www.linkedin.com/in/alan-dsilva-289b77170/
                 </a>
               </li>
-              <li className="list-group-item">
+              <li className="list-group-item text-light">
                 Email -{" "}
                 <a
                   href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=alandsilva2001@gmail.com`}
@@ -60,7 +60,7 @@ const Footer = (): JSX.Element => {
                   alandsilva2001@gmail.com
                 </a>
               </li>
-              <li className="list-group-item">
+              <li className="list-group-item text-light">
                 Codechef -{" "}
                 <a href="https://www.codechef.com/users/deathbringer26">
                   https://www.codechef.com/users/deathbringer26
@@ -71,7 +71,7 @@ const Footer = (): JSX.Element => {
         </div>
         <div className="footer-copyright text-center py-3">
           <small>
-            © 2020 Copyright:
+            © 2024 Copyright:
             <a href="https://www.linkedin.com/in/alan-dsilva-289b77170/">
               &nbsp;Alan Dsilva
             </a>{" "}

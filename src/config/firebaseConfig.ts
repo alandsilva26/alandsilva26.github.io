@@ -5,7 +5,7 @@ import "firebase/storage";
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: import.meta.env.VITE_APP_API_KEY,
   authDomain: "portfolio-9dbc4.firebaseapp.com",
   databaseURL: "https://portfolio-9dbc4.firebaseio.com",
   projectId: "portfolio-9dbc4",

@@ -24,7 +24,6 @@ const HomeHeader = (): JSX.Element => {
 
         base[3].style.backgroundPositionY = offset * 0.3 + "px";
 
-        console.log(base);
       } catch (e) {
         console.warn("Tet");
       }

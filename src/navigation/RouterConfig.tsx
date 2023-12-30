@@ -1,5 +1,4 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // components
 import Home from "../pages/Home/HomePage";
@@ -9,13 +8,14 @@ import NoMatch from "../pages/Errors/404";
 
 const RouterConfig = (): JSX.Element => {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/projects" component={Project} />
-      <Route exact path="/about" component={AboutPage} />
-      <Route exact path="*" component={NoMatch} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Project />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="*" element={<NoMatch />} />
+    </Routes>
   );
 };
 
 export default RouterConfig;
+

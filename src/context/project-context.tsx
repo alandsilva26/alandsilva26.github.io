@@ -5,7 +5,9 @@ import ProjectItemCards, { Project } from "../components/ProjectItemCards";
 
 const ProjectContext = createContext({});
 
-interface IProps {}
+interface IProps {
+  children: any
+}
 
 interface IState {
   user: {};
@@ -93,10 +95,10 @@ class ProjectProvider extends React.Component<IProps, IState> {
       ],
     };
 
-    if (process.env.REACT_APP_MODE === "production") {
-      if (typeof process.env.REACT_APP_WEBHOOK_URL !== undefined) {
+    if (import.meta.env.REACT_APP_MODE === "production") {
+      if (typeof import.meta.env.REACT_APP_WEBHOOK_URL !== undefined) {
         axios
-          .post(process.env.REACT_APP_WEBHOOK_URL!, article)
+          .post(import.meta.env.REACT_APP_WEBHOOK_URL!, article)
           .then((response) => {
             console.log("Sent");
           });
