@@ -1,8 +1,6 @@
-import firebase from "firebase/app";
-import "firebase/analytics";
-import "firebase/database";
-import "firebase/storage";
-import "firebase/auth";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
+import 'firebase/compat/analytics';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APP_API_KEY,
@@ -19,6 +17,4 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 export const db = firebase.database();
-export const st = firebase.storage();
-export const auth = firebase.auth();
 export default firebase;
