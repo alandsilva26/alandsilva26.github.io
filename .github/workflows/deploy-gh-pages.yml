@@ -33,10 +33,10 @@ jobs:
       - name: Build
         run: CI=false npm run build
         env:
-          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
-          REACT_APP_WEBHOOK_URL: ${{ secrets.REACT_APP_WEBHOOK_URL }}
-          REACT_APP_STEAM_API_KEY: ${{ secrets.REACT_APP_STEAM_API_KEY }}
-          REACT_APP_STEAM_ID: ${{ secrets.REACT_APP_STEAM_ID }}
+          VITE_APP_API_KEY: ${{ secrets.VITE_APP_API_KEY }}
+          VITE_APP_WEBHOOK_URL: ${{ secrets.VITE_APP_WEBHOOK_URL }}
+          VITE_APP_STEAM_API_KEY: ${{ secrets.VITE_APP_STEAM_API_KEY }}
+          VITE_APP_STEAM_ID: ${{ secrets.VITE_APP_STEAM_ID }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

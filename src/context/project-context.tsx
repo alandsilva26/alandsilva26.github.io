@@ -95,10 +95,10 @@ class ProjectProvider extends React.Component<IProps, IState> {
       ],
     };
 
-    if (import.meta.env.REACT_APP_MODE === "production") {
-      if (typeof import.meta.env.REACT_APP_WEBHOOK_URL !== undefined) {
+    if (import.meta.env.VITE_APP_MODE === "production") {
+      if (typeof import.meta.env.VITE_APP_WEBHOOK_URL !== undefined) {
         axios
-          .post(import.meta.env.REACT_APP_WEBHOOK_URL!, article)
+          .post(import.meta.env.VITE_APP_WEBHOOK_URL!, article)
           .then((response) => {
             console.log("Sent");
           });
@@ -118,7 +118,7 @@ class ProjectProvider extends React.Component<IProps, IState> {
   // steamApi() {
   //   const url =
   //     "https://cors-anywhere.herokuapp.com/" +
-  //     `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.REACT_APP_STEAM_API_KEY}&steamids=${process.env.REACT_APP_STEAM_ID}`;
+  //     `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${import.meta.env.VITE_APP_STEAM_API_KEY}&steamids=${import.meta.env.VITE_APP_STEAM_ID}`;
   //   const steamResponse = fetch(url, {
   //     mode: "cors",
   //     method: "GET",
