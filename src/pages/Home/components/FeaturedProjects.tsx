@@ -9,6 +9,7 @@ class FeaturedProjects extends React.Component {
   static contextType = ProjectContext;
 
   render() {
+    // @ts-ignore
     const { featuredProjects, getProjectElements, loading } = this.context;
 
     return (

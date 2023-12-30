@@ -1,5 +1,3 @@
-import React from "react";
-
 //icons
 import { MdLocationOn } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";

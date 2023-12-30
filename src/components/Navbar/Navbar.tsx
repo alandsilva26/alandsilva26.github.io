@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import NavbarItem from "./navbar-item";
 import routes from "../../config/routes";
 import { HiMenu } from "react-icons/hi";
 
 //assets
-const logo = require("../../images/favicon-32x32.png");
+import logo from "../../images/favicon-32x32.png";
 
 const Navbar = (): JSX.Element => {
   const navbarItems = routes.map((route, index) => {

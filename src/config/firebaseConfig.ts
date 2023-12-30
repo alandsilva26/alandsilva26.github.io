@@ -1,11 +1,9 @@
-import firebase from "firebase/app";
-import "firebase/analytics";
-import "firebase/database";
-import "firebase/storage";
-import "firebase/auth";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
+import 'firebase/compat/analytics';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: import.meta.env.VITE_APP_API_KEY,
   authDomain: "portfolio-9dbc4.firebaseapp.com",
   databaseURL: "https://portfolio-9dbc4.firebaseio.com",
   projectId: "portfolio-9dbc4",
@@ -19,6 +17,4 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 export const db = firebase.database();
-export const st = firebase.storage();
-export const auth = firebase.auth();
 export default firebase;
