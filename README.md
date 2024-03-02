@@ -25,3 +25,8 @@ Pages to migrate
 Features to replicate
 
 - [ ] - Smooth Scroll
+## Projects page pending items
+- [ ] - Footer
+- [ ] - Icons for card
+- [ ] - Working filter
+
