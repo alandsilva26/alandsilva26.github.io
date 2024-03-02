@@ -3,8 +3,9 @@ import "../styles/pages/projects.scss";
 
 import Layout from "../layouts/Layout.astro";
 import Header from "../layouts/Header.astro";
-import data from "../content/projects/projects.json";
 import ProjectCard from "../components/ProjectCard.astro";
+
+import data from "../content/projects/projects.json";
 ---
 
 <Layout title="Projects">
@@ -12,7 +13,7 @@ import ProjectCard from "../components/ProjectCard.astro";
     <div class="header--projects">
       <div class="header--project-overlay"></div>
       <div class="container">
-        <h1>Projects</h1>
+        <h1>My Projects</h1>
       </div>
     </div>
   </Header>
@@ -85,7 +86,7 @@ import ProjectCard from "../components/ProjectCard.astro";
       background-clip: text;
       background-image: url("../assets/images/keyboard.jpg");
       background-color: $dark-purple;
-      padding: 1em 1em 0em 1em;
+      padding: 0.5em 1em 0em 1em;
 
       @media screen and (max-width: $breakpoint-mobile) {
         font-size: 3em;
