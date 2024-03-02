@@ -1,0 +1,36 @@
+.navbar-brand {
+  font-weight: bold;
+  color: $primary-purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    padding-left: 30px !important;
+
+    .brand-image {
+      display: none;
+    }
+  }
+}
+
+.navbar-brand:hover {
+  color: $primary-purple;
+}
+
+.nav-link {
+  transition: transform 0.2s ease;
+}
+
+// .nav-link:hover {
+// transition: transform 0.2s ease;
+// transform: scale(1.1);
+// }
+
+// button {
+//   color: red !important;
+// }
+
+// span.navbar-toggler-icon {
+//   color: red !important;
+// }

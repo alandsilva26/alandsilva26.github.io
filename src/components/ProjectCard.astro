@@ -1,0 +1,66 @@
+---
+import "../styles/components/project-card.scss";
+
+const { project } = Astro.props;
+
+const {
+  name,
+  github,
+  shortDescription,
+  featured,
+  primaryLanguage,
+  websiteLink,
+} = project;
+
+let formattedDescription = shortDescription;
+
+let starClass = featured ? "icons star featured" : "icons star";
+
+if (formattedDescription.length > 200) {
+  formattedDescription = formattedDescription.slice(0, 197) + "...";
+}
+---
+
+<div class="col-lg-4 col-md-6 col-sm-12 project-item--wrapper">
+  <article class="project-item text-break p-3">
+    <div class="project-item--body">
+      <h6 class="project-item--title">
+        <a href={github}>{name}</a>
+        {/* <Link to={`/projects/${slug}`} >{name}</Link> */}
+      </h6>
+      <p>{formattedDescription}</p>
+    </div>
+    <div class="project-item--footer">
+      <div
+        class="project-item--color"
+        style={{ backgroundColor: primaryLanguage.color }}
+      >
+      </div>
+      <div class="project-item--language">{primaryLanguage.name}</div>
+      {
+        github !== "" && github !== undefined ? (
+          <div class={starClass}>
+            <a href={github + "/stargazers"} />
+          </div>
+        ) : featured ? (
+          <div class="icons star featured" />
+        ) : null
+      }
+      {
+        github !== "" && github !== undefined ? (
+          <div class="icons">
+            <a href={github} />
+          </div>
+        ) : null
+      }
+      {
+        websiteLink !== "" && websiteLink !== undefined ? (
+          <div class="icons">
+            <a href={websiteLink} />
+          </div>
+        ) : null
+      }
+    </div>
+  </article>
+</div>
+<style></style>
