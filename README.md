@@ -11,3 +11,17 @@
         <img src="https://github.com/alandsilva26/alandsilva26.github.io/workflows/Deploy%20to%20Github%20Pages/badge.svg?branch=release" alt="Github Pages release status"/>
     </a>
 </p>
+
+## Migrate to [Astro](https://astro.build/)
+
+Pages to migrate
+
+| Page     | Status |
+| -------- | ------ |
+| Home     |        |
+| Projects |        |
+| About    |        |
+
+Features to replicate
+
+- [ ] - Smooth Scroll
