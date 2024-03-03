@@ -1,25 +1,25 @@
 .navbar-brand {
-  font-weight: bold;
-  color: $primary-purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-weight: bold;
+    color: $primary-purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @media screen and (max-width: $breakpoint-mobile) {
-    padding-left: 30px !important;
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding-left: 30px !important;
 
-    .brand-image {
-      display: none;
+        .brand-image {
+            display: none;
+        }
     }
-  }
 }
 
 .navbar-brand:hover {
-  color: $primary-purple;
+    color: $primary-purple;
 }
 
 .nav-link {
-  transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 // .nav-link:hover {

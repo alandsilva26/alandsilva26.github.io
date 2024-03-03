@@ -1,120 +1,120 @@
 .projects--all-projects {
-  min-height: 60vh;
+    min-height: 60vh;
 }
 
 .projects--main {
-  // background: $light-purple;
-  position: relative;
-  overflow: hidden;
-
-  // $offset: 50px;
-  // $primary: $light-purple;
-
-  // .bumps {
-  //   div {
-  //     width: 150px;
-  //     height: $offset;
-  //     position: absolute;
-  //     background: $primary;
-  //     top: -$offset;
-  //   }
-
-  //   div:before {
-  //     content: "";
-  //     width: $offset;
-  //     height: $offset;
-  //     position: absolute;
-  //   }
-
-  //   .left-bump {
-  //     left: 0;
-  //   }
-
-  //   .left-bump:before {
-  //     right: -$offset;
-  //     border-top: calc(#{$offset/2}) solid transparent;
-  //     border-left: calc(#{$offset/2}) solid $primary;
-  //     border-right: calc(#{$offset/2}) solid transparent;
-  //     border-bottom: calc(#{$offset/2}) solid $primary;
-  //   }
-
-  //   .right-bump {
-  //     right: 0;
-  //   }
-
-  //   .right-bump:before {
-  //     left: -$offset;
-  //     border-top: calc(#{$offset/2}) solid transparent;
-  //     border-left: calc(#{$offset/2}) solid transparent;
-  //     border-right: calc(#{$offset/2}) solid $primary;
-  //     border-bottom: calc(#{$offset/2}) solid $primary;
-  //   }
-  // }
-  .projects--form {
+    // background: $light-purple;
+    position: relative;
     overflow: hidden;
-    background: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 26px;
-    margin: 3em 0px;
 
-    @media screen and (max-width: $breakpoint-mobile) {
-      display: none;
-    }
+    // $offset: 50px;
+    // $primary: $light-purple;
 
-    div {
-      margin: 0px 6px;
-    }
+    // .bumps {
+    //   div {
+    //     width: 150px;
+    //     height: $offset;
+    //     position: absolute;
+    //     background: $primary;
+    //     top: -$offset;
+    //   }
 
-    input {
-      border: none;
-      margin: 0px 10px;
-    }
+    //   div:before {
+    //     content: "";
+    //     width: $offset;
+    //     height: $offset;
+    //     position: absolute;
+    //   }
 
-    input:focus {
-      border: none;
-      box-shadow: none;
-    }
+    //   .left-bump {
+    //     left: 0;
+    //   }
 
-    div:nth-child(-n + 3) {
-      input {
-        border: none;
-        border-right: 1px solid grey;
-        border-radius: 0;
-      }
-    }
+    //   .left-bump:before {
+    //     right: -$offset;
+    //     border-top: calc(#{$offset/2}) solid transparent;
+    //     border-left: calc(#{$offset/2}) solid $primary;
+    //     border-right: calc(#{$offset/2}) solid transparent;
+    //     border-bottom: calc(#{$offset/2}) solid $primary;
+    //   }
 
-    div:nth-child(1) {
-      flex-grow: 2;
+    //   .right-bump {
+    //     right: 0;
+    //   }
+
+    //   .right-bump:before {
+    //     left: -$offset;
+    //     border-top: calc(#{$offset/2}) solid transparent;
+    //     border-left: calc(#{$offset/2}) solid transparent;
+    //     border-right: calc(#{$offset/2}) solid $primary;
+    //     border-bottom: calc(#{$offset/2}) solid $primary;
+    //   }
+    // }
+    .projects--form {
+        overflow: hidden;
+        background: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        border-radius: 26px;
+        margin: 3em 0px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            display: none;
+        }
+
+        div {
+            margin: 0px 6px;
+        }
+
+        input {
+            border: none;
+            margin: 0px 10px;
+        }
+
+        input:focus {
+            border: none;
+            box-shadow: none;
+        }
+
+        div:nth-child(-n + 3) {
+            input {
+                border: none;
+                border-right: 1px solid grey;
+                border-radius: 0;
+            }
+        }
+
+        div:nth-child(1) {
+            flex-grow: 2;
+        }
     }
-  }
 }
 .projects--form.disabled {
-  background: #e9ecef;
+    background: #e9ecef;
 }
 
 .projects--background-image {
-  display: block;
-  position: absolute;
-  top: -1500px;
-  left: 0;
-  width: 100%;
-  height: 2960px;
-  z-index: -1;
-  background-image: url("../../assets/images/projects-3.png");
-  // background-repeat: no-repeats;
-  opacity: 0.5;
+    display: block;
+    position: absolute;
+    top: -1500px;
+    left: 0;
+    width: 100%;
+    height: 2960px;
+    z-index: -1;
+    background-image: url('../../assets/images/projects-3.png');
+    // background-repeat: no-repeats;
+    opacity: 0.5;
 }
 
 .background-color::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: $light-purple;
-  z-index: -2;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $light-purple;
+    z-index: -2;
 }

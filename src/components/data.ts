@@ -1,21 +1,24 @@
-import type Project from "../lib/types/Project";
+import type Project from '../lib/types/Project';
 
-export const filterProjects = (projects: Project[], filters: {
-    name: string,
-    description: string,
-    language: string,
-    tag: string
-}): Project[] => {
+export const filterProjects = (
+    projects: Project[],
+    filters: {
+        name: string;
+        description: string;
+        language: string;
+        tag: string;
+    }
+): Project[] => {
     let filteredProjects = [...projects];
     let { name, description, language, tag } = filters;
 
-    if (name !== "") {
+    if (name !== '') {
         filteredProjects = filteredProjects.filter((item) =>
             item.name.toLowerCase().includes(name)
         );
     }
 
-    if (description !== "") {
+    if (description !== '') {
         filteredProjects = filteredProjects.filter((item) => {
             if (item.shortDescription.toLowerCase().includes(description)) {
                 return item;
@@ -27,7 +30,7 @@ export const filterProjects = (projects: Project[], filters: {
         });
     }
 
-    if (tag !== "") {
+    if (tag !== '') {
         filteredProjects = filteredProjects.filter((item) => {
             let containsTag = false;
             for (let i = 0; i < item.tags.length; i++) {
@@ -43,7 +46,7 @@ export const filterProjects = (projects: Project[], filters: {
         });
     }
 
-    if (language !== "") {
+    if (language !== '') {
         filteredProjects = filteredProjects.filter((item) => {
             let containsLanguage = false;
             if (item.languages) {
@@ -55,8 +58,10 @@ export const filterProjects = (projects: Project[], filters: {
                 }
             }
 
-            if (item.hasOwnProperty("primaryLanguage") && !containsLanguage) {
-                if (item.primaryLanguage.name.toLowerCase().includes(language)) {
+            if (item.hasOwnProperty('primaryLanguage') && !containsLanguage) {
+                if (
+                    item.primaryLanguage.name.toLowerCase().includes(language)
+                ) {
                     containsLanguage = true;
                 }
             }

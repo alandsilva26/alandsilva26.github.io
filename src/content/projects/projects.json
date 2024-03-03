@@ -1,471 +1,370 @@
 [
-  {
-    "description": "Android application for SFIT. This application has functionality for students and teachers both. Students can perform almost all actions which are available on erp including view attendance, marks, news, etc. Teachers can create modify polls on app which are sent to students in real time. ",
-    "featured": true,
-    "github": "https://github.com/alandsilva26?tab=projects",
-    "images": [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FApp%2Ftia4091998241796275821.png?alt=media&token=9dceaf0a-b3fa-4f14-a693-f05f53404427"
-    ],
-    "name": "SFIT college app",
-    "primaryLanguage": {
-      "color": "#00B4AB",
-      "name": "Dart"
+    {
+        "description": "Android application for SFIT. This application has functionality for students and teachers both. Students can perform almost all actions which are available on erp including view attendance, marks, news, etc. Teachers can create modify polls on app which are sent to students in real time. ",
+        "featured": true,
+        "github": "https://github.com/alandsilva26?tab=projects",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FApp%2Ftia4091998241796275821.png?alt=media&token=9dceaf0a-b3fa-4f14-a693-f05f53404427"
+        ],
+        "name": "SFIT college app",
+        "primaryLanguage": {
+            "color": "#00B4AB",
+            "name": "Dart"
+        },
+        "shortDescription": "Android application for St. Francis Institute of Technology. App is for students and teachers with modern material UI.",
+        "slug": "sfit-college-app",
+        "tags": ["dart", "firebase", "fcm", "flutter", "android"],
+        "websiteLink": "https://play.google.com/store/apps/details?id=org.sfit.sfitapp"
     },
-    "shortDescription": "Android application for St. Francis Institute of Technology. App is for students and teachers with modern material UI.",
-    "slug": "sfit-college-app",
-    "tags": [
-      "dart",
-      "firebase",
-      "fcm",
-      "flutter",
-      "android"
-    ],
-    "websiteLink": "https://play.google.com/store/apps/details?id=org.sfit.sfitapp"
-  },
-  {
-    "description": "Semester 5 Web Development Lab Mini Project.This projects aims to create a full fleged hotel management system which can be further scaled as per requirement. It includes a modern responsive UI built using bootstrap 4. We have also made extensive use of jQuery ajax to perform various network requests.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/hotel-management-php",
-    "languages": [
-      "PHP",
-      "HTML",
-      "JavaScript",
-      "SCSS",
-      "CSS"
-    ],
-    "name": "Hotel management system",
-    "primaryLanguage": {
-      "color": "#4F5D95",
-      "name": "PHP"
+    {
+        "description": "Semester 5 Web Development Lab Mini Project.This projects aims to create a full fleged hotel management system which can be further scaled as per requirement. It includes a modern responsive UI built using bootstrap 4. We have also made extensive use of jQuery ajax to perform various network requests.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/hotel-management-php",
+        "languages": ["PHP", "HTML", "JavaScript", "SCSS", "CSS"],
+        "name": "Hotel management system",
+        "primaryLanguage": {
+            "color": "#4F5D95",
+            "name": "PHP"
+        },
+        "shortDescription": "Semester 5 Web Development Lab Mini Project.This projects aims to create a full fleged hotel management system which can be further scaled as per requirement. It includes a modern responsive UI built using bootstrap 4. We have also made extensive use of jQuery ajax to perform various network requests.",
+        "slug": "sem5-web-dev-assignment-5",
+        "tags": [
+            "php",
+            "mysql",
+            "sass",
+            "xampp",
+            "hotel-management",
+            "project"
+        ],
+        "websiteLink": "https://alandsilva26.github.io/hotel-management-website-template"
     },
-    "shortDescription": "Semester 5 Web Development Lab Mini Project.This projects aims to create a full fleged hotel management system which can be further scaled as per requirement. It includes a modern responsive UI built using bootstrap 4. We have also made extensive use of jQuery ajax to perform various network requests.",
-    "slug": "sem5-web-dev-assignment-5",
-    "tags": [
-      "php",
-      "mysql",
-      "sass",
-      "xampp",
-      "hotel-management",
-      "project"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/hotel-management-website-template"
-  },
-  {
-    "description": "An android app to track steam market item prices. Created in flutter. Allows user to add his own steam items to keep track.",
-    "featured": true,
-    "github": "https://github.com/alandsilva26/steam-market-tracker-flutter",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/steam-market-tracker-flutter/master/media/home.png",
-      "https://raw.githubusercontent.com/alandsilva26/steam-market-tracker-flutter/master/media/form-with-entry.png"
-    ],
-    "name": "Steam Market Tracker",
-    "primaryLanguage": {
-      "color": "#00B4AB",
-      "name": "Dart"
+    {
+        "description": "An android app to track steam market item prices. Created in flutter. Allows user to add his own steam items to keep track.",
+        "featured": true,
+        "github": "https://github.com/alandsilva26/steam-market-tracker-flutter",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/steam-market-tracker-flutter/master/media/home.png",
+            "https://raw.githubusercontent.com/alandsilva26/steam-market-tracker-flutter/master/media/form-with-entry.png"
+        ],
+        "name": "Steam Market Tracker",
+        "primaryLanguage": {
+            "color": "#00B4AB",
+            "name": "Dart"
+        },
+        "shortDescription": "An android app to track steam market item prices. Created in flutter. Allows user to add his own steam items to keep track.",
+        "slug": "steam-market-tracker-flutter",
+        "tags": [
+            "dart",
+            "flutter",
+            "steam-api",
+            "steam-market",
+            "item-tracker"
+        ],
+        "websiteLink": "https://github.com/alandsilva26/steam-market-tracker-flutter/releases"
     },
-    "shortDescription": "An android app to track steam market item prices. Created in flutter. Allows user to add his own steam items to keep track.",
-    "slug": "steam-market-tracker-flutter",
-    "tags": [
-      "dart",
-      "flutter",
-      "steam-api",
-      "steam-market",
-      "item-tracker"
-    ],
-    "websiteLink": "https://github.com/alandsilva26/steam-market-tracker-flutter/releases"
-  },
-  {
-    "description": "",
-    "featured": true,
-    "github": "https://github.com/alandsilva26/beach-resort-react",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/beach-resort-react/master/media/home-top.png"
-    ],
-    "name": "Beach resort react",
-    "primaryLanguage": {
-      "color": "#f1e05a",
-      "name": "JavaScript"
+    {
+        "description": "",
+        "featured": true,
+        "github": "https://github.com/alandsilva26/beach-resort-react",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/beach-resort-react/master/media/home-top.png"
+        ],
+        "name": "Beach resort react",
+        "primaryLanguage": {
+            "color": "#f1e05a",
+            "name": "JavaScript"
+        },
+        "shortDescription": "A hotel reservation website created using React.js.",
+        "slug": "beach-resort-react",
+        "tags": ["react", "reactjs", "react-router", "hotel-booking", "resort"],
+        "websiteLink": "https://alandsilva26.github.io/beach-resort-react"
     },
-    "shortDescription": "A hotel reservation website created using React.js.",
-    "slug": "beach-resort-react",
-    "tags": [
-      "react",
-      "reactjs",
-      "react-router",
-      "hotel-booking",
-      "resort"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/beach-resort-react"
-  },
-  {
-    "description": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
-    "featured": true,
-    "github": "https://github.com/alandsilva26/mock-website",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-home-top.png",
-      "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-gallery-top.png"
-    ],
-    "name": "Mock Website",
-    "primaryLanguage": {
-      "color": "#e34c26",
-      "name": "HTML"
+    {
+        "description": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
+        "featured": true,
+        "github": "https://github.com/alandsilva26/mock-website",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-home-top.png",
+            "https://raw.githubusercontent.com/alandsilva26/mock-website/master/mock-gallery-top.png"
+        ],
+        "name": "Mock Website",
+        "primaryLanguage": {
+            "color": "#e34c26",
+            "name": "HTML"
+        },
+        "shortDescription": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
+        "slug": "mock-website",
+        "tags": ["blog", "eccomerce", "photo-gallery", "static-website"],
+        "websiteLink": "https://alandsilva26.github.io/mock-website/"
     },
-    "shortDescription": "A mock website showcasing login/signup forms, pinterest like gallery, amazon like e-commerce showcase and about me page.",
-    "slug": "mock-website",
-    "tags": [
-      "blog",
-      "eccomerce",
-      "photo-gallery",
-      "static-website"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/mock-website/"
-  },
-  {
-    "description": "Chrome extension to modify GitHub profile dom. This extension will customize GitHub to look similar to the old design. Also added ability to auto format the url of a currently playing YouTube video and display with current timestamp that you are on",
-    "featured": true,
-    "github": "https://github.com/alandsilva26/github-nostalgia",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/github-nostalgia/master/screenshots/extension1.png"
-    ],
-    "name": "Github nostalgia",
-    "primaryLanguage": {
-      "color": "#f1e05a",
-      "name": "JavaScript"
+    {
+        "description": "Chrome extension to modify GitHub profile dom. This extension will customize GitHub to look similar to the old design. Also added ability to auto format the url of a currently playing YouTube video and display with current timestamp that you are on",
+        "featured": true,
+        "github": "https://github.com/alandsilva26/github-nostalgia",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/github-nostalgia/master/screenshots/extension1.png"
+        ],
+        "name": "Github nostalgia",
+        "primaryLanguage": {
+            "color": "#f1e05a",
+            "name": "JavaScript"
+        },
+        "shortDescription": "Chrome extension to modify GitHub profile dom.",
+        "slug": "github-nostalgia",
+        "tags": ["chrome-extension", "dom-manipulation", "web-extensions"],
+        "websiteLink": ""
     },
-    "shortDescription": "Chrome extension to modify GitHub profile dom.",
-    "slug": "github-nostalgia",
-    "tags": [
-      "chrome-extension",
-      "dom-manipulation",
-      "web-extensions"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "Majority of this config is derived from Luke Smith's i3wm configuration. I have derived my config from a lot of different sources. I have made a lot of major changes. Named Trice because i use two machines, a desktop pc 'Lenovo ThinkCenter' and a laptop 'Lenovo ThinkPad', hence \"Trice\"!!(Also because i could not think of anything else).",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Trice",
-    "name": "Trice",
-    "primaryLanguage": {
-      "color": "#89e051",
-      "name": "Shell"
+    {
+        "description": "Majority of this config is derived from Luke Smith's i3wm configuration. I have derived my config from a lot of different sources. I have made a lot of major changes. Named Trice because i use two machines, a desktop pc 'Lenovo ThinkCenter' and a laptop 'Lenovo ThinkPad', hence \"Trice\"!!(Also because i could not think of anything else).",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Trice",
+        "name": "Trice",
+        "primaryLanguage": {
+            "color": "#89e051",
+            "name": "Shell"
+        },
+        "shortDescription": "My Arch linux configuration files, specifically for i3 window manager.",
+        "slug": "trice",
+        "tags": [
+            "linux-config",
+            "arch-linux",
+            "i3",
+            "i3wm",
+            "linux",
+            "i3-gaps",
+            "vim",
+            "neovim-dotfiles"
+        ],
+        "websiteLink": ""
     },
-    "shortDescription": "My Arch linux configuration files, specifically for i3 window manager.",
-    "slug": "trice",
-    "tags": [
-      "linux-config",
-      "arch-linux",
-      "i3",
-      "i3wm",
-      "linux",
-      "i3-gaps",
-      "vim",
-      "neovim-dotfiles"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "Semester 5 java mini project which allows students to fill their internal exam marks themselves. This project was made using JavaFX and JPheonix Material design libraries, font-awesome icons. The main purpose of this project was to showcase database operations. This project also includes dynamic tables.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Java-Project-Sem-3",
-    "images": [
-      ""
-    ],
-    "name": "Exam marks confirmation",
-    "primaryLanguage": {
-      "color": "#b07219",
-      "name": "Java"
+    {
+        "description": "Semester 5 java mini project which allows students to fill their internal exam marks themselves. This project was made using JavaFX and JPheonix Material design libraries, font-awesome icons. The main purpose of this project was to showcase database operations. This project also includes dynamic tables.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Java-Project-Sem-3",
+        "images": [""],
+        "name": "Exam marks confirmation",
+        "primaryLanguage": {
+            "color": "#b07219",
+            "name": "Java"
+        },
+        "shortDescription": "Semester 5 java mini project which allows students to fill their internal exam marks themselves",
+        "slug": "Java-Project-Sem-3",
+        "tags": ["javafx", "jpheonix", "mysqlconnector", "javagui"],
+        "websiteLink": ""
     },
-    "shortDescription": "Semester 5 java mini project which allows students to fill their internal exam marks themselves",
-    "slug": "Java-Project-Sem-3",
-    "tags": [
-      "javafx",
-      "jpheonix",
-      "mysqlconnector",
-      "javagui"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "A basic meme generator which takes top and bottom text and overlays it above a random meme image taken from meme generator api.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/meme-generator-react",
-    "images": [
-      "https://github.com/alandsilva26/meme-generator-react/raw/master/screenshots/preview1.png"
-    ],
-    "name": "Meme Generator",
-    "primaryLanguage": {
-      "color": "#f1e05a",
-      "name": "JavaScript"
+    {
+        "description": "A basic meme generator which takes top and bottom text and overlays it above a random meme image taken from meme generator api.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/meme-generator-react",
+        "images": [
+            "https://github.com/alandsilva26/meme-generator-react/raw/master/screenshots/preview1.png"
+        ],
+        "name": "Meme Generator",
+        "primaryLanguage": {
+            "color": "#f1e05a",
+            "name": "JavaScript"
+        },
+        "shortDescription": "A basic meme generator using react and random images.",
+        "slug": "meme-generator-react",
+        "tags": ["react", "react-dom", "meme-generator", "memes"],
+        "websiteLink": ""
     },
-    "shortDescription": "A basic meme generator using react and random images.",
-    "slug": "meme-generator-react",
-    "tags": [
-      "react",
-      "react-dom",
-      "meme-generator",
-      "memes"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "A basic shopping cart application built with flutter with barcode scanning function to add items to cart, credit card info screen. This app uses basic static github api as previous api was deprecated, retaining all previous logic",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/shopping-cart-flutter",
-    "images": [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FShopping-app%2Fcart-4-items.png?alt=media&token=879b027b-5940-4658-8b77-768ab1a7eeaa"
-    ],
-    "name": "Shopping cart flutter",
-    "primaryLanguage": {
-      "color": "#00B4AB",
-      "name": "Dart"
+    {
+        "description": "A basic shopping cart application built with flutter with barcode scanning function to add items to cart, credit card info screen. This app uses basic static github api as previous api was deprecated, retaining all previous logic",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/shopping-cart-flutter",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/Projects%2FShopping-app%2Fcart-4-items.png?alt=media&token=879b027b-5940-4658-8b77-768ab1a7eeaa"
+        ],
+        "name": "Shopping cart flutter",
+        "primaryLanguage": {
+            "color": "#00B4AB",
+            "name": "Dart"
+        },
+        "shortDescription": "A basic shopping cart application built with flutter",
+        "slug": "shopping-cart-flutter",
+        "tags": ["flutter", "barcode-scanner", "dart", "android"],
+        "websiteLink": "https://alandsilva26.github.io/shopping-cart-flutter/"
     },
-    "shortDescription": "A basic shopping cart application built with flutter",
-    "slug": "shopping-cart-flutter",
-    "tags": [
-      "flutter",
-      "barcode-scanner",
-      "dart",
-      "android"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/shopping-cart-flutter/"
-  },
-  {
-    "description": "A basic todo web app using introductory React",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/todo-app-react",
-    "name": "To-Do App",
-    "primaryLanguage": {
-      "color": "#f1e05a",
-      "name": "JavaScript"
+    {
+        "description": "A basic todo web app using introductory React",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/todo-app-react",
+        "name": "To-Do App",
+        "primaryLanguage": {
+            "color": "#f1e05a",
+            "name": "JavaScript"
+        },
+        "shortDescription": "A basic todo web app using introductory React",
+        "slug": "todo-app-react",
+        "tags": ["react", "react-dom", "to-do"],
+        "websiteLink": "https://alandsilva26.github.io/todo-app-react"
     },
-    "shortDescription": "A basic todo web app using introductory React",
-    "slug": "todo-app-react",
-    "tags": [
-      "react",
-      "react-dom",
-      "to-do"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/todo-app-react"
-  },
-  {
-    "description": "Using this you can add entry to database and perform delete action. All actions are performed asynchronously using AJAX. Database used is mysql with backend as php. Also includes a prime number generator withing given range.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-5",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-5/media/screenshot.png"
-    ],
-    "languages": [
-      "PHP",
-      "HTML",
-      "JavaScript",
-      "CSS"
-    ],
-    "name": "Php product manager",
-    "primaryLanguage": {
-      "color": "#4F5D95",
-      "name": "PHP"
+    {
+        "description": "Using this you can add entry to database and perform delete action. All actions are performed asynchronously using AJAX. Database used is mysql with backend as php. Also includes a prime number generator withing given range.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-5",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-5/media/screenshot.png"
+        ],
+        "languages": ["PHP", "HTML", "JavaScript", "CSS"],
+        "name": "Php product manager",
+        "primaryLanguage": {
+            "color": "#4F5D95",
+            "name": "PHP"
+        },
+        "shortDescription": "A simple php project. Includes a prime number generator withing given range and product manager using ajax",
+        "slug": "sem5-web-dev-assignment-5",
+        "tags": ["primenumber", "php", "mysql", "product-manager", "ajax"],
+        "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-5/"
     },
-    "shortDescription": "A simple php project. Includes a prime number generator withing given range and product manager using ajax",
-    "slug": "sem5-web-dev-assignment-5",
-    "tags": [
-      "primenumber",
-      "php",
-      "mysql",
-      "product-manager",
-      "ajax"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-5/"
-  },
-  {
-    "description": "A login page I designed for my Semester 5 short projects. I referenced the design from a pinterest photo and tried to recreate it.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-1.2",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-1.2/media/screenshot.png"
-    ],
-    "languages": [
-      "HTML",
-      "CSS"
-    ],
-    "name": "Login Page",
-    "primaryLanguage": {
-      "color": "#e34c26",
-      "name": "HTML"
+    {
+        "description": "A login page I designed for my Semester 5 short projects. I referenced the design from a pinterest photo and tried to recreate it.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-1.2",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-1.2/media/screenshot.png"
+        ],
+        "languages": ["HTML", "CSS"],
+        "name": "Login Page",
+        "primaryLanguage": {
+            "color": "#e34c26",
+            "name": "HTML"
+        },
+        "shortDescription": "A custom login page",
+        "slug": "sem5-web-dev-assignment-1.2",
+        "tags": ["login-page", "html-template", "web-design", "static-website"],
+        "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-1.2/index.html"
     },
-    "shortDescription": "A custom login page",
-    "slug": "sem5-web-dev-assignment-1.2",
-    "tags": [
-      "login-page",
-      "html-template",
-      "web-design",
-      "static-website"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-1.2/index.html"
-  },
-  {
-    "description": "Converted a static portfolio page into a django website. This project includes a contact manager with a form",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-4",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-4/media/screenshot.png"
-    ],
-    "languages": [
-      "Python",
-      "HTML",
-      "CSS"
-    ],
-    "name": "Django basic portfolio",
-    "primaryLanguage": {
-      "color": "#3572A5",
-      "name": "Python"
+    {
+        "description": "Converted a static portfolio page into a django website. This project includes a contact manager with a form",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-4",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-4/media/screenshot.png"
+        ],
+        "languages": ["Python", "HTML", "CSS"],
+        "name": "Django basic portfolio",
+        "primaryLanguage": {
+            "color": "#3572A5",
+            "name": "Python"
+        },
+        "shortDescription": "A basic portfolio website using Django which also includes a contact page.",
+        "slug": "sem5-web-dev-assignment-4",
+        "tags": ["python", "django", "portfolio"],
+        "websiteLink": ""
     },
-    "shortDescription": "A basic portfolio website using Django which also includes a contact page.",
-    "slug": "sem5-web-dev-assignment-4",
-    "tags": [
-      "python",
-      "django",
-      "portfolio"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "Sem 5 short project. Home page reference taken from valorant, Sass and other websites. This project was really helpfull for learning some css concepts like ::before and ::after, transforms, etc.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-2",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-2/media/screenshot.png"
-    ],
-    "languages": [
-      "HTML",
-      "CSS"
-    ],
-    "name": "Home Page",
-    "primaryLanguage": {
-      "color": "#e34c26",
-      "name": "HTML"
+    {
+        "description": "Sem 5 short project. Home page reference taken from valorant, Sass and other websites. This project was really helpfull for learning some css concepts like ::before and ::after, transforms, etc.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-2",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-2/media/screenshot.png"
+        ],
+        "languages": ["HTML", "CSS"],
+        "name": "Home Page",
+        "primaryLanguage": {
+            "color": "#e34c26",
+            "name": "HTML"
+        },
+        "shortDescription": "A home page design website using vanilla html, css.",
+        "slug": "sem5-web-dev-assignment-2",
+        "tags": [
+            "home-page",
+            "html-template",
+            "web-design",
+            "static-website",
+            "valorant-website",
+            "css-buttons"
+        ],
+        "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-2/index.html"
     },
-    "shortDescription": "A home page design website using vanilla html, css.",
-    "slug": "sem5-web-dev-assignment-2",
-    "tags": [
-      "home-page",
-      "html-template",
-      "web-design",
-      "static-website",
-      "valorant-website",
-      "css-buttons"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-2/index.html"
-  },
-  {
-    "description": "A basic email client using JavaFX and gmail. Displays multiple inboxes.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/EmailClient",
-    "images": [
-      ""
-    ],
-    "name": "Email Client JavaFX",
-    "primaryLanguage": {
-      "color": "#b07219",
-      "name": "Java"
+    {
+        "description": "A basic email client using JavaFX and gmail. Displays multiple inboxes.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/EmailClient",
+        "images": [""],
+        "name": "Email Client JavaFX",
+        "primaryLanguage": {
+            "color": "#b07219",
+            "name": "Java"
+        },
+        "shortDescription": "A basic email client using JavaFX and gmail",
+        "slug": "EmailClient",
+        "tags": ["javafx", "javagui"],
+        "websiteLink": ""
     },
-    "shortDescription": "A basic email client using JavaFX and gmail",
-    "slug": "EmailClient",
-    "tags": [
-      "javafx",
-      "javagui"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "This project includes a javascript image carousel with pause and reset options along with option to set custom interval. A calculator with actual buttons and finally an email validator using regex.",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-3",
-    "images": [
-      "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-3/media/screenshot.png"
-    ],
-    "languages": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "name": "JavaScript Mini Project",
-    "primaryLanguage": {
-      "color": "#f1e05a",
-      "name": "JavaScript"
+    {
+        "description": "This project includes a javascript image carousel with pause and reset options along with option to set custom interval. A calculator with actual buttons and finally an email validator using regex.",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Sem5-webDevCourse/tree/master/Assignment-3",
+        "images": [
+            "https://raw.githubusercontent.com/alandsilva26/Sem5-webDevCourse/master/Assignment-3/media/screenshot.png"
+        ],
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "name": "JavaScript Mini Project",
+        "primaryLanguage": {
+            "color": "#f1e05a",
+            "name": "JavaScript"
+        },
+        "shortDescription": "Javascript image carousel, calculator and email validator.",
+        "slug": "sem5-web-dev-assignment-3",
+        "tags": [
+            "javascript-project",
+            "javascript",
+            "javascript-carousel",
+            "email-validator",
+            "calculator"
+        ],
+        "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-3/index.html"
     },
-    "shortDescription": "Javascript image carousel, calculator and email validator.",
-    "slug": "sem5-web-dev-assignment-3",
-    "tags": [
-      "javascript-project",
-      "javascript",
-      "javascript-carousel",
-      "email-validator",
-      "calculator"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/Sem5-webDevCourse/Assignment-3/index.html"
-  },
-  {
-    "description": "Algorithms in C for generating basic patterns",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/Pattern",
-    "images": [
-      ""
-    ],
-    "name": "Pattern",
-    "primaryLanguage": {
-      "color": "#555555",
-      "name": "C"
+    {
+        "description": "Algorithms in C for generating basic patterns",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/Pattern",
+        "images": [""],
+        "name": "Pattern",
+        "primaryLanguage": {
+            "color": "#555555",
+            "name": "C"
+        },
+        "shortDescription": "Algorithms in C for generating basic patterns",
+        "slug": "Pattern",
+        "tags": ["gcc", "algorithms", "C", "patterns"],
+        "websiteLink": ""
     },
-    "shortDescription": "Algorithms in C for generating basic patterns",
-    "slug": "Pattern",
-    "tags": [
-      "gcc",
-      "algorithms",
-      "C",
-      "patterns"
-    ],
-    "websiteLink": ""
-  },
-  {
-    "description": "CSS Mini templates for reference",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/CSS-Basic-Animations",
-    "images": [
-      ""
-    ],
-    "name": "CSS Basic Animations",
-    "primaryLanguage": {
-      "color": "#563d7c",
-      "name": "CSS"
+    {
+        "description": "CSS Mini templates for reference",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/CSS-Basic-Animations",
+        "images": [""],
+        "name": "CSS Basic Animations",
+        "primaryLanguage": {
+            "color": "#563d7c",
+            "name": "CSS"
+        },
+        "shortDescription": "CSS basic animations source code for reference",
+        "slug": "CSS-Basic-Animations",
+        "tags": ["CSS", "animations"],
+        "websiteLink": "https://alandsilva26.github.io/CSS-Basic-Animations/"
     },
-    "shortDescription": "CSS basic animations source code for reference",
-    "slug": "CSS-Basic-Animations",
-    "tags": [
-      "CSS",
-      "animations"
-    ],
-    "websiteLink": "https://alandsilva26.github.io/CSS-Basic-Animations/"
-  },
-  {
-    "description": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
-    "featured": false,
-    "github": "https://github.com/alandsilva26/building-database-applications-in-php-Coursera",
-    "images": [
-      ""
-    ],
-    "name": "Building database applications in PHP",
-    "primaryLanguage": {
-      "color": "#4F5D95",
-      "name": "PHP"
-    },
-    "shortDescription": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
-    "slug": "building-database-applications-in-php-Coursera",
-    "tags": [
-      "coursera",
-      "course-files",
-      "building-web-applications-in-php"
-    ],
-    "websiteLink": ""
-  }
+    {
+        "description": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
+        "featured": false,
+        "github": "https://github.com/alandsilva26/building-database-applications-in-php-Coursera",
+        "images": [""],
+        "name": "Building database applications in PHP",
+        "primaryLanguage": {
+            "color": "#4F5D95",
+            "name": "PHP"
+        },
+        "shortDescription": "This repository includes course files for the - Building database applications in php Coursera. Includes assignments for week2, week4 and week5.Main CRUD application in week5",
+        "slug": "building-database-applications-in-php-Coursera",
+        "tags": [
+            "coursera",
+            "course-files",
+            "building-web-applications-in-php"
+        ],
+        "websiteLink": ""
+    }
 ]

@@ -1,7 +1,7 @@
-import { AiOutlineStar, AiOutlineGithub } from "react-icons/ai";
-import { HiOutlineLink } from "react-icons/hi";
-import type Project from "../lib/types/Project";
-import "../styles/components/project-card.scss";
+import { AiOutlineStar, AiOutlineGithub } from 'react-icons/ai';
+import { HiOutlineLink } from 'react-icons/hi';
+import type Project from '../lib/types/Project';
+import '../styles/components/project-card.scss';
 
 const ProjectCard = ({ project }: { project: Project }) => {
     const {
@@ -15,10 +15,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
     let formattedDescription = shortDescription;
 
-    let starClass = featured ? "icons star featured" : "icons star";
+    let starClass = featured ? 'icons star featured' : 'icons star';
 
     if (formattedDescription.length > 200) {
-        formattedDescription = formattedDescription.slice(0, 197) + "...";
+        formattedDescription = formattedDescription.slice(0, 197) + '...';
     }
 
     return (
@@ -35,10 +35,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
                         class="project-item--color"
                         style={{ backgroundColor: primaryLanguage.color }}
                     ></div>
-                    <div class="project-item--language">{primaryLanguage.name}</div>
-                    {github !== "" && github !== undefined ? (
+                    <div class="project-item--language">
+                        {primaryLanguage.name}
+                    </div>
+                    {github !== '' && github !== undefined ? (
                         <div class={starClass}>
-                            <a href={github + "/stargazers"}>
+                            <a href={github + '/stargazers'}>
                                 <AiOutlineStar />
                             </a>
                         </div>
@@ -47,14 +49,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
                             <AiOutlineStar />
                         </div>
                     ) : null}
-                    {github !== "" && github !== undefined ? (
+                    {github !== '' && github !== undefined ? (
                         <div class="icons">
                             <a href={github}>
                                 <AiOutlineGithub />
                             </a>
                         </div>
                     ) : null}
-                    {websiteLink !== "" && websiteLink !== undefined ? (
+                    {websiteLink !== '' && websiteLink !== undefined ? (
                         <div class="icons">
                             <a href={websiteLink}>
                                 <HiOutlineLink />
@@ -65,6 +67,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
             </article>
         </div>
     );
-}
+};
 
 export { ProjectCard };
