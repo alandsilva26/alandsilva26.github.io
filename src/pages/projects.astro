@@ -1,66 +1,65 @@
 ---
-import "../styles/pages/projects.scss";
+import '../styles/pages/projects.scss';
 
-import Layout from "../layouts/Layout.astro";
-import Header from "../layouts/Header.astro";
-import { ProjectsList } from "../components/ProjectsList.tsx";
+import Layout from '../layouts/Layout.astro';
+import Header from '../layouts/Header.astro';
+import { ProjectsList } from '../components/ProjectsList.tsx';
 ---
 
 <Layout title="Projects">
-  <Header>
-    <div class="header--projects">
-      <div class="header--project-overlay"></div>
-      <div class="container">
-        <h1>My Projects</h1>
-      </div>
-    </div>
-  </Header>
-  <ProjectsList client:load />
+    <Header>
+        <div class="header--projects">
+            <div class="header--project-overlay"></div>
+            <div class="container">
+                <h1>My Projects</h1>
+            </div>
+        </div>
+    </Header>
+    <ProjectsList client:load />
 </Layout>
 
 <style lang="scss">
-  .header--projects {
-    h1 {
-      text-align: center;
-      font-size: 9em;
-      font-weight: 900;
-      color: $dark-purple;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      background-image: url("../assets/images/keyboard.jpg");
-      background-color: $dark-purple;
-      padding: 0.5em 1em 0em 1em;
+    .header--projects {
+        h1 {
+            text-align: center;
+            font-size: 9em;
+            font-weight: 900;
+            color: $dark-purple;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: url('../assets/images/keyboard.jpg');
+            background-color: $dark-purple;
+            padding: 0.5em 1em 0em 1em;
 
-      @media screen and (max-width: $breakpoint-mobile) {
-        font-size: 3em;
-        padding: 0;
-      }
+            @media screen and (max-width: $breakpoint-mobile) {
+                font-size: 3em;
+                padding: 0;
+            }
+        }
     }
-  }
 
-  .header--project-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #a2dbf7;
-    background-image: linear-gradient(
-      to bottom,
-      #a2dbf7,
-      rgba(158, 158, 226, 1)
-    );
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // border: 1px solid red;
-    // background-image: url("../../images/marble.svg");
-    // background-image: url("../../images/projects-base1.svg");
+    .header--project-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #a2dbf7;
+        background-image: linear-gradient(
+            to bottom,
+            #a2dbf7,
+            rgba(158, 158, 226, 1)
+        );
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // border: 1px solid red;
+        // background-image: url("../../images/marble.svg");
+        // background-image: url("../../images/projects-base1.svg");
 
-    // @media screen and (max-width: $breakpoint-mobile) {
-    //   background-size: contain;
-    // }
-  }
+        // @media screen and (max-width: $breakpoint-mobile) {
+        //   background-size: contain;
+        // }
+    }
 </style>
-../components/ProjectList.tsx

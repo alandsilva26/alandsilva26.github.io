@@ -22,42 +22,42 @@ const ProjectCard = ({ project }: { project: Project }) => {
     }
 
     return (
-        <div class="col-lg-4 col-md-6 col-sm-12 project-item--wrapper">
-            <article class="project-item text-break p-3">
-                <div class="project-item--body ">
-                    <h6 class="project-item--title">
+        <div className="col-lg-4 col-md-6 col-sm-12 project-item--wrapper">
+            <article className="project-item text-break p-3">
+                <div className="project-item--body ">
+                    <h6 className="project-item--title">
                         <a href={github}>{name}</a>
                     </h6>
                     <p>{formattedDescription}</p>
                 </div>
-                <div class="project-item--footer">
+                <div className="project-item--footer">
                     <div
-                        class="project-item--color"
+                        className="project-item--color"
                         style={{ backgroundColor: primaryLanguage.color }}
                     ></div>
-                    <div class="project-item--language">
+                    <div className="project-item--language">
                         {primaryLanguage.name}
                     </div>
                     {github !== '' && github !== undefined ? (
-                        <div class={starClass}>
+                        <div className={starClass}>
                             <a href={github + '/stargazers'}>
                                 <AiOutlineStar />
                             </a>
                         </div>
                     ) : featured ? (
-                        <div class="icons star featured">
+                        <div className="icons star featured">
                             <AiOutlineStar />
                         </div>
                     ) : null}
                     {github !== '' && github !== undefined ? (
-                        <div class="icons">
+                        <div className="icons">
                             <a href={github}>
                                 <AiOutlineGithub />
                             </a>
                         </div>
                     ) : null}
                     {websiteLink !== '' && websiteLink !== undefined ? (
-                        <div class="icons">
+                        <div className="icons">
                             <a href={websiteLink}>
                                 <HiOutlineLink />
                             </a>

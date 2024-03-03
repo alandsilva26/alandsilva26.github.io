@@ -1,5 +1,12 @@
 import type Project from '../lib/types/Project';
 
+export interface Filter {
+    name: string;
+    description: string;
+    language: string;
+    tag: string;
+}
+
 export const filterProjects = (
     projects: Project[],
     filters: {
@@ -10,7 +17,8 @@ export const filterProjects = (
     }
 ): Project[] => {
     let filteredProjects = [...projects];
-    let { name, description, language, tag } = filters;
+    console.log('input', projects.length);
+    const { name, description, language, tag } = filters;
 
     if (name !== '') {
         filteredProjects = filteredProjects.filter((item) =>
@@ -74,5 +82,6 @@ export const filterProjects = (
         });
     }
 
+    console.log('filtered projects', filterProjects.length);
     return filteredProjects;
 };

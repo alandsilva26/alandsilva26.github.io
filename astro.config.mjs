@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import preact from '@astrojs/preact';
+import react from '@astrojs/react';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -22,5 +23,5 @@ export default defineConfig({
             },
         },
     },
-    integrations: [preact({ compat: true })],
+    integrations: [react()],
 });
