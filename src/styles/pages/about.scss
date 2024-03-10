@@ -1,0 +1,243 @@
+.header--about-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.about-header {
+    background: $primary-pink;
+}
+
+// .about::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   // height: 2960px;
+//   z-index: -1;
+//   background-color: $dark-purple;
+//   background-image: url("../../images/marble.svg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+.about {
+    // background: whitesmoke;
+    background-color: $primary-pink;
+    // background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-9dbc4.appspot.com/o/marble.svg?alt=media&token=143bbf78-7310-444f-bc50-cf26b8e08773");
+    background-image: url('../../assets/images/marble.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: white;
+
+    .container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: rgba(0, 0, 0, 0.84);
+        border-radius: 0.5em;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .row:nth-child(2) {
+            padding: 1em 0px;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .avatar-group {
+        align-items: flex-start;
+        @media screen and (max-width: $breakpoint-mobile) {
+            padding: 5px;
+        }
+    }
+
+    .avatar {
+        img {
+            display: block;
+            width: 100%;
+            border: 2px solid rgb(90, 169, 214);
+            object-fit: contain;
+        }
+
+        .ingame {
+            border: 2px solid rgb(142, 184, 58);
+            box-shadow: 5px 5px 10px rgba(142, 184, 58, 0.4);
+        }
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .list-group-item {
+        background: transparent;
+        border: none;
+        padding: 0.5em 0em;
+    }
+
+    .personal-data {
+        h6 {
+            font-size: 0.9em;
+        }
+    }
+
+    .cell-group {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        color: $grey;
+        .cell {
+            font-size: 0.9em;
+
+            a {
+                color: $grey;
+            }
+        }
+    }
+
+    .list-group.social-data {
+        margin: 2em 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // flex-basis: 33.333333%;
+        justify-content: center;
+
+        .list-group-item {
+            // border: 1px solid white;
+            border-radius: 2px;
+            margin: 4px 8px;
+            padding: 8px 14px;
+            svg {
+                color: white;
+                font-size: 2.3em;
+            }
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin: 5px 6px;
+            .list-group-item {
+                font-size: 0.9em;
+                padding: 3px 8px;
+                margin: 4px 3px;
+            }
+        }
+    }
+
+    .cellgame {
+        color: rgb(142, 184, 58);
+    }
+
+    .row.technical {
+        text-align: center;
+
+        .col {
+            margin: 10px;
+
+            @media screen and (max-width: $breakpoint-mobile) {
+                margin: 10px 0px;
+            }
+        }
+
+        .col:nth-child(1) {
+            .chip {
+                border: 2px solid rgba(46, 204, 113, 1);
+                background: rgba(46, 204, 112, 0.14);
+            }
+        }
+        .col:nth-child(2) {
+            .chip {
+                border: 2px solid rgba(233, 30, 99, 1);
+                background: rgba(233, 30, 99, 0.14);
+            }
+        }
+        .col:nth-child(3) {
+            .chip {
+                border: 2px solid rgba(241, 196, 15, 1);
+                background: rgba(241, 196, 15, 0.14);
+            }
+        }
+        .col:nth-child(4) {
+            .chip {
+                border: 2px solid rgba(168, 67, 0, 1);
+                background: rgba(168, 67, 0, 0.14);
+            }
+        }
+        .col:nth-child(5) {
+            .chip {
+                border: 2px solid rgba(155, 89, 182, 1);
+                background: rgba(155, 89, 182, 0.14);
+            }
+        }
+        .col:nth-child(6) {
+            .chip {
+                border: 2px solid rgba(52, 152, 219, 1);
+                background: rgba(52, 152, 219, 0.14);
+            }
+        }
+    }
+
+    .chip-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chip {
+        margin: 4px 6px;
+        padding: 2px 12px;
+        border-radius: 12px;
+        font-size: 0.9em;
+        transition: transform 0.3s ease;
+        transform: scale(1);
+    }
+}
+
+// .list-group-item {
+//   padding: 0px;
+//   background: transparent;
+//   border: none;
+// }
+
+// .about--social-links {
+//   font-size: 0.8em;
+
+//   .list-group-item {
+//     padding: 5px 10px;
+//   }
+
+//   a {
+//     display: flex !important;
+//     align-items: center;
+//     color: black;
+
+//     svg {
+//       font-size: 1.4em;
+//     }
+//   }
+
+//   a:hover {
+//     text-decoration: none;
+//   }
+// }
+
+// .personal-data {
+//   h6 {
+//     display: flex;
+//     align-items: center;
+
+//     svg {
+//       font-size: 1.2em;
+//     }
+//   }
+// }

@@ -1,0 +1,9 @@
+---
+const { prefixUrl, postfixUrl, children, content } = Astro.props;
+---
+
+<li class="list-group-item">
+    <a class="cell-group" href={prefixUrl + postfixUrl}>
+        <div class="cell">{children}</div>
+    </a>
+</li>

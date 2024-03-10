@@ -1,0 +1,141 @@
+---
+import Header from '../layouts/Header.astro';
+import Layout from '../layouts/Layout.astro';
+
+import about from '../content/about';
+
+import '../styles/pages/about.scss';
+---
+
+<Layout title="About me">
+    <Header headerClass="about-header" />
+    <div class="about">
+        <div class="container py-5">
+            <div class="row text-break">
+                <div class="avatar-group col-4 col-md-2">
+                    <div class="avatar">
+                        <img
+                            src="assets/images/akatsuki.jpg"
+                            alt="Alan Dsilva"
+                        />
+                    </div>
+                </div>
+                <div class="col-8 col-md-6">
+                    <h4>Alan Anand Dsilva</h4>
+                    <ul class="list-group personal-data">
+                        <li class="list-group-item">
+                            <h6 class="cell-group">
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/mdi--location.svg"
+                                        alt="Linkedin icon"
+                                        style="height:12px;width:12px"
+                                    />
+                                </div>
+                                <div class="cell">&nbsp; {about.location}</div>
+                            </h6>
+                        </li>
+                        <li class="list-group-item">
+                            <h6 class="cell-group">
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/mdi--email.svg"
+                                        alt="Linkedin icon"
+                                        style="height:12px;width:12px"
+                                    />
+                                </div>
+                                <div class="cell">&nbsp; {about.email}</div>
+                            </h6>
+                        </li>
+                        <li class="list-group-item">
+                            <h6 class="cell-group">
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/mdi--building.svg"
+                                        alt="Linkedin icon"
+                                        style="height:12px;width:12px"
+                                    />
+                                </div>
+                                <div class="cell">
+                                    &nbsp; St. Francis Institute of Technology
+                                </div>
+                            </h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-10">
+                    <ul class="list-group social-data">
+                        <li class="list-group-item">
+                            <a
+                                class="cell-group"
+                                href="https://www.linkedin.com/in/alan-dsilva-289b77170/"
+                            >
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/ant-design--linkedin-filled.svg"
+                                        alt="Linkedin icon"
+                                    />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a
+                                class="cell-group"
+                                href="https://www.hackerrank.com/profile/alandsilva2001"
+                            >
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/cib--hackerrank.svg"
+                                        alt="Hackerrank icon"
+                                    />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a
+                                class="cell-group"
+                                href="https://github.com/alandsilva26"
+                            >
+                                <div class="cell">
+                                    <img
+                                        src="/assets/icons/ant-design--github-filled.svg"
+                                        alt="Github icon"
+                                    />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;{about.description}
+                    </p>
+                </div>
+            </div>
+
+            <div class="row technical">
+                {
+                    about.technical.map((item) => {
+                        return (
+                            <div class="col col-12 col-md-10">
+                                <div class="title">
+                                    <p>{item.name}</p>
+                                </div>
+                                <div class="chip-group">
+                                    {item.content.map((itemChild) => {
+                                        return (
+                                            <div class="chip">{itemChild}</div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        );
+                    })
+                }
+            </div>
+        </div>
+    </div>
+</Layout>

@@ -1,49 +1,51 @@
 ---
-
+const { headerClass } = Astro.props;
 ---
 
 <header>
-  <nav class="navbar navbar-expand-sm">
-    <a href="/" class="navbar-brand ps-5">
-      <img
-        class="brand-image"
-        src="/assets/images/logo.png"
-        alt="website logo"
-      /> &nbsp;Alan Dsilva
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto pe-5">
-        <li class="nav-item">
-          <a href="/" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="/about" class="nav-link">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <slot />
+    <header class={headerClass}>
+        <nav class="navbar navbar-expand-sm">
+            <a href="/" class="navbar-brand ps-5">
+                <img
+                    class="brand-image"
+                    src="/assets/images/logo.png"
+                    alt="website logo"
+                /> &nbsp;Alan Dsilva
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pe-5">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <slot />
+    </header>
 </header>
 
 <style lang="scss">
-  header {
-    position: relative;
-    .nav-link {
-      color: $primary-purple !important;
-      font-weight: bold;
+    header {
+        position: relative;
+        .nav-link {
+            color: $primary-purple !important;
+            font-weight: bold;
+        }
     }
-  }
 </style>
