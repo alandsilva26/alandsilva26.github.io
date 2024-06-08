@@ -3,7 +3,7 @@ import '../styles/pages/projects.scss';
 
 import Layout from '../layouts/Layout.astro';
 import Header from '../layouts/Header.astro';
-import { ProjectsList } from '../components/ProjectsList.tsx';
+import { ProjectsListWithFilters } from '../components/ProjectsListWithFilters.tsx';
 ---
 
 <Layout title="Projects">
@@ -15,7 +15,7 @@ import { ProjectsList } from '../components/ProjectsList.tsx';
             </div>
         </div>
     </Header>
-    <ProjectsList client:load />
+    <ProjectsListWithFilters client:load />
 </Layout>
 
 <style lang="scss">

@@ -9,7 +9,7 @@ import { filterProjects, type Filter } from './data';
 
 const data = _data as Project[];
 
-export const ProjectsList = () => {
+export const ProjectsListWithFilters = () => {
     const [projects, setProjects] = useState([...data]);
     const [filter, setFilter] = useState<Filter>({
         name: '',

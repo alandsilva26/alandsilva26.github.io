@@ -2,3 +2,16 @@
 @import './base/reset';
 @import './abstracts/variables';
 @import './vendor/bootstrap';
+
+.projects--background-image {
+    display: block;
+    position: absolute;
+    top: -1500px;
+    left: 0;
+    width: 100%;
+    height: 2960px;
+    z-index: -1;
+    background-image: url('../assets/images/projects-3.png');
+    // background-repeat: no-repeats;
+    opacity: 0.5;
+}
